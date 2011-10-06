@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:View xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:s="library://ns.adobe.com/flex/spark"
+		title="Tweets" viewActivate="getTweets()" viewDeactivate="removeTimer()">
+	
+	<fx:Script>
+		<![CDATA[
+			import com.adobe.serialization.json.JSON;
+			import com.classsoftware.com.HTML;
+			import com.classsoftware.com.Mobile;
+			import com.pialabs.eskimo.components.PopOver;
+			import com.pialabs.eskimo.controls.SkinnableAlert;
+			
+			import mx.collections.ArrayCollection;
+			import mx.rpc.events.FaultEvent;
+			import mx.rpc.events.ResultEvent;
+			import mx.rpc.http.HTTPService;
+			
+			[Bindable] private var tweets:ArrayCollection;
+			[Bindable] private var twitterHandle:String;
+			
+			private var timer:Timer = new Timer(60000);
+			
+			// TODO Nice to have features
+			// 1. add your own tweeet
+			// 2. retweet
+			// 3. follow person
+			
+			protected function getTweets():void {
+				twitterHandle = data as String;
+				
+				if (twitterHandle.search("@") == 0) {
+					title = twitterHandle + "'s tweets";
+				}
+				else {
+					title = twitterHandle + " tweets";
+				}
+				
+				if (Mobile.hasConnection()) {
+					// read tweets
+					searchTweet();
+					
+					// refresh at 1 min intervals (otherwise can be rate limited)
+					// TODO make this an option/set interval in UI?
+					timer.addEventListener(TimerEvent.TIMER, onTimer);
+					timer.start();
+				}
+				else {
+					SkinnableAlert.show('You need an internet connection to view tweets.', 'No Internet Connection');
+				}
+			}
+			
+			protected function removeTimer():void {
+				timer.removeEventListener(TimerEvent.TIMER, onTimer);
+			}
+			
+			protected function onTimer(event:TimerEvent):void {
+				//TODO use ids from last time and only get newest tweets
+				searchTweet();
+			}
+			
+			protected function searchTweet():void {
+				var search:HTTPService = new HTTPService();
+				
+				search.addEventListener(ResultEvent.RESULT, decodeTweets);
+				search.addEventListener(FaultEvent.FAULT, twitterFail);
+				
+				search.url = "http://search.twitter.com/search.json?q=" + twitterHandle;
+				search.resultFormat = "text";
+				search.send();
+			}
+			
+			protected function decodeTweets(event:ResultEvent):void {
+				try {
+					var result:Object = JSON.decode(event.result as String);
+				}
+				catch (error:Error) {
+					return; //TODO perhaps show an alert?
+				}
+				
+				tweets = new ArrayCollection(result.results);
+			}
+			
+			protected function twitterFail(event:FaultEvent):void {
+				SkinnableAlert.show("Twitter is not currently working. No tweets can be displayed.", "Fail Whale Sighted!");
+			}
+			
+			protected function changeTwitter(name:String):void {
+				navigator.pushView(TwitterView, name);
+			}
+			
+			protected function showAboutTwitter():void {
+				navigator.pushView(AboutTwitterView);
+			}
+			
+			protected function goBack():void {
+				navigator.popView();
+			}
+			
+			public function stripHTML(data:Object):String {
+				return HTML.stripTags(data.text);
+			}
+		]]>
+	</fx:Script>
+
+	<fx:Declarations>
+		<s:MultiDPIBitmapSource id="info" source160dpi="@Embed('assets/icons/info24x24.png')" source240dpi="@Embed('assets/icons/info24x24.png')" source320dpi="@Embed('assets/icons/info48x48.png')" />
+	</fx:Declarations>
+	
+	<s:navigationContent>
+		<s:Button label="Back" click="goBack()" enabled="{navigator.length > 1}" includeInLayout="{navigator.length > 1}" />
+	</s:navigationContent>
+	
+	<s:actionContent>
+		<s:Button icon="{info}" click="showAboutTwitter()" />
+	</s:actionContent>
+	
+	<s:viewMenuItems>
+		<s:ViewMenuItem label="Twitter" click="showAboutTwitter()" iconPlacement="left" icon="{info}" />
+	</s:viewMenuItems>
+	
+	<s:List id="tweetList" dataProvider="{tweets}" width="100%" height="100%" change="changeTwitter(tweetList.selectedItem.from_user)">		
+		<s:itemRenderer>
+			<fx:Component>
+				<s:IconItemRenderer iconField="profile_image_url" iconWidth="48" iconHeight="48" labelField="from_user" messageFunction="{outerDocument.stripHTML}" verticalAlign="top" />
+			</fx:Component>
+		</s:itemRenderer>
+	</s:List>
+</s:View>

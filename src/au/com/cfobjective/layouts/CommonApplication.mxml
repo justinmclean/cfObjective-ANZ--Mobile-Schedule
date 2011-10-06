@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:TabbedViewNavigatorApplication xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:s="library://ns.adobe.com/flex/spark"
+								  splashScreenMinimumDisplayTime="2000" initialize="setup()"
+								  backgroundColor="0x76abca" height="100%" width="100%">
+	
+	<fx:Style source="assets/styles/styles.css" />
+	
+	<fx:Declarations>
+		<fx:XML id="initialData" source="http://cfobjective.com.au/xml/sessions" format="e4x" />
+		<!-- <fx:XML id="initialData" source="data/sessions.xml" format="e4x" /> -->
+		<s:HTTPService id="newData" url="http://cfobjective.com.au/xml/sessions/" resultFormat="e4x" />
+	</fx:Declarations>
+	
+	<fx:Script>
+		<![CDATA[
+			import au.com.cfobjective.model.Model;
+			
+			import com.classsoftware.com.Mobile;
+			import com.pialabs.eskimo.controls.SkinnableAlert;
+			
+			import mx.collections.ArrayCollection;
+			import mx.data.messages.DataErrorMessage;
+			import mx.events.ResizeEvent;
+			import mx.rpc.events.FaultEvent;
+			import mx.rpc.events.ResultEvent;
+			
+			[Bindable] public var sessions:ArrayCollection = new ArrayCollection();
+			[Bindable] public var schedule:ArrayCollection = new ArrayCollection();
+			[Bindable] public var speakers:ArrayCollection = new ArrayCollection();
+			
+			private var _splashScreenImagePortrait:Class;
+			private var _splashScreenImageLandscape:Class;
+			
+			private function setup():void {
+				Model.convertData(initialData, sessions, schedule, speakers);
+				
+				Multitouch.inputMode = MultitouchInputMode.GESTURE;
+				
+				addEventListener(TransformGestureEvent.GESTURE_SWIPE, swipeLeftOrRight); 
+				
+				newData.addEventListener(ResultEvent.RESULT, convertNewData);
+				newData.addEventListener(FaultEvent.FAULT, dataError);
+				
+				if (Mobile.hasConnection()) {
+					newData.send();
+				}
+			}
+			
+			private function dataError(event:FaultEvent):void {
+				SkinnableAlert.show("Unable to check if new schedule information is available. Schedule may be out of date.", 'Schedule may be out of date');
+			}
+			
+			private function convertNewData(event:ResultEvent):void {
+				var newData:XML = event.result as XML;
+				
+				initialData.@version = "1.0";
+				if (Number(newData.@version) > Number(initialData.@version)) {
+					//TODO XML just contains deltas
+					sessions = new ArrayCollection();
+					schedule = new ArrayCollection();
+					speakers = new ArrayCollection();
+					Model.convertData(newData, sessions, schedule, speakers);
+				}
+			}
+			
+			protected function onResize(event:ResizeEvent):void {			
+				//currentState = (height > width)?"Portrait":"Landscape";
+			}
+
+			override public function get splashScreenImage():Class
+			{
+				return this["splashScreenImage"+ currentState];
+			}
+
+			public function set splashScreenPortraitImage(value:Class):void
+			{
+				_splashScreenImagePortrait = value;
+			}
+			
+			public function set splashScreenLandscapeImage(value:Class):void
+			{
+				_splashScreenImageLandscape = value;
+			}		
+			
+			private function swipeLeftOrRight(event:TransformGestureEvent):void {
+				// swipe right
+				if (event.offsetX == 1) {
+					if (tabbedNavigator.selectedIndex > 0) {
+						tabbedNavigator.selectedIndex--;
+					}
+				}
+				// swipe left
+				else if (event.offsetX == -1) {
+					if (tabbedNavigator.selectedIndex < (tabbedNavigator.length - 1)) {
+						tabbedNavigator.selectedIndex++;
+					}
+				}
+			}
+		]]>
+	</fx:Script>
+</s:TabbedViewNavigatorApplication>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:VGroup xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:s="library://ns.adobe.com/flex/spark"
+		 width="100%" height="100%" initialize="setup()">
+	
+	<s:states>
+		<s:State name="Thursday" />
+		<s:State name="Friday" />
+	</s:states>
+	
+	<fx:Metadata>
+		[Event(name="sessionChange", type="au.com.cfobjective.events.SessionEvent")]		
+	</fx:Metadata>
+	
+	<fx:Declarations>
+		<s:MultiDPIBitmapSource id="left" source160dpi="@Embed('assets/icons/arrowleft24x24.png')" source240dpi="@Embed('assets/icons/arrowleft48x48.png')" source320dpi="@Embed('assets/icons/arrowleft64x64.png')" />
+		<s:MultiDPIBitmapSource id="right" source160dpi="@Embed('assets/icons/arrowright24x24.png')" source240dpi="@Embed('assets/icons/arrowright48x48.png')" source320dpi="@Embed('assets/icons/arrowleft64x64.png')" />
+	</fx:Declarations>
+	
+	<fx:Script>
+		<![CDATA[
+			import au.com.cfobjective.events.SessionEvent;
+			import au.com.cfobjective.model.Scheduled;
+			import au.com.cfobjective.model.Session;
+			
+			import mx.collections.ArrayCollection;
+			import mx.collections.ArrayList;
+			
+			[Bindable] public var schedule:ArrayCollection;
+			
+			protected function setup():void {			
+				var date:Date = new Date();
+				
+				if (date.day == 5) {
+					currentState = "Friday";
+				}
+				
+				filterDay();
+			}
+
+			protected function changeSession(schedule:Scheduled):void {
+				if (schedule.linked) {
+					var event:SessionEvent = new SessionEvent(SessionEvent.CHANGE, schedule.session);
+					
+					dispatchEvent(event);
+				}
+			}
+			
+			protected function changeDay(day:String):void {
+				currentState = day;
+				filterDay();
+			}
+			
+			protected function filterDay():void {
+				schedule.filterFunction = sameDay;
+				schedule.refresh();
+			}
+			
+			private function sameDay(item:Object):Boolean {
+				return (item.day + "day" == currentState);
+			}
+		]]>
+	</fx:Script>
+	
+	<s:HGroup width="100%" verticalAlign="middle" paddingLeft="5" paddingRight="5" paddingTop="5" gap="5" includeIn="Thursday">
+		<s:Button icon="{left}" enabled="false" />
+		<s:Label width="100%" text="Thursday" styleName="title" textAlign="center" />
+		<s:Button icon="{right}" click="changeDay('Friday')" />
+	</s:HGroup>
+	
+	<s:HGroup width="100%" verticalAlign="middle" paddingLeft="5" paddingRight="5" paddingTop="5" gap="5" includeIn="Friday">
+		<s:Button icon="{left}" click="changeDay('Thursday')" />
+		<s:Label width="100%" text="Friday" styleName="title" textAlign="center" />
+		<s:Button icon="{right}" enabled="false" />
+	</s:HGroup>
+	
+	<s:List id="scheduleList" dataProvider="{schedule}" width="100%" height="100%" change="changeSession(scheduleList.selectedItem as Scheduled)">		
+		<s:itemRenderer>
+			<fx:Component>
+				<s:IconItemRenderer iconField="listIcon" iconWidth="32" iconHeight="32" labelField="timeAndLocation" messageField="details" verticalAlign="top" />
+			</fx:Component>
+		</s:itemRenderer>
+	</s:List>
+</s:VGroup>

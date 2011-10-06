@@ -1,0 +1,72 @@
+/* CSS file */
+@namespace s "library://ns.adobe.com/flex/spark";
+
+@media (application-dpi:160)
+{
+	s|ActionBar #titleDisplay {
+		fontSize:18;
+	}
+	
+	s|TabbedViewNavigator #tabBar {
+		fontSize:12;
+	}
+	
+	s|ButtonBar #buttonBar {
+		fontSize:12;
+	}
+	
+	.subTitle {
+		fontSize:18;
+	}
+	
+	.title {
+		fontWeight:"bold";
+		fontSize:18;
+	}
+}
+
+@media (application-dpi:240)
+{
+	s|ActionBar #titleDisplay {
+		fontSize:27;
+	}
+	
+	s|TabbedViewNavigator #tabBar {
+		fontSize:18;
+	}
+	
+	s|ButtonBar #buttonBar {
+		fontSize:18;
+	}
+
+	.subTitle {
+		fontSize:27;
+	}
+	
+	.title {
+		fontSize:27;
+	}
+}
+
+@media (application-dpi:320)
+{
+	s|ActionBar #titleDisplay {
+		fontSize:36;
+	}
+	
+	s|TabbedViewNavigator #tabBar {
+		fontSize:24;
+	}
+	
+	s|ButtonBar #buttonBar {
+		fontSize:24;
+	}
+	
+	.subTitle {
+		fontSize:36;
+	}
+	
+	.title {
+		fontSize:36;
+	}
+}

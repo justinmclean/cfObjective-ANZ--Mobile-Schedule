@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Group xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:s="library://ns.adobe.com/flex/spark"
+		 width="100%" height="100%">
+	
+	<fx:Metadata>
+		[Event(name="sessionChange", type="au.com.cfobjective.events.SessionEvent")]		
+	</fx:Metadata>
+	
+	<fx:Script>
+		<![CDATA[
+			import au.com.cfobjective.events.SessionEvent;
+			import au.com.cfobjective.model.Session;
+			import au.com.cfobjective.views.SessionsView;
+			
+			import mx.collections.ArrayCollection;
+			
+			import spark.components.NavigatorContent;
+			import spark.components.ViewNavigator;
+			
+			[Bindable] public var sessions:ArrayCollection;
+			
+			protected function changeSession(session:Session):void {
+				var event:SessionEvent = new SessionEvent(SessionEvent.CHANGE, session);
+				
+				dispatchEvent(event);
+			}
+		]]>
+	</fx:Script>
+	
+	<s:List id="sessionList" dataProvider="{sessions}" labelField="title" change="changeSession(sessionList.selectedItem as Session)" height="100%" width="100%" />
+</s:Group>

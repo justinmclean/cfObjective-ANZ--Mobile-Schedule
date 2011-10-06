@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:View xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:s="library://ns.adobe.com/flex/spark" xmlns:views="au.com.cfobjective.views.*" xmlns:components="au.com.cfobjective.components.*"
+		title="cf.Objective(ANZ) Schedule" creationComplete="gotoFirstSchedule()">
+		
+	<s:layout>
+		<s:HorizontalLayout gap="20" />
+	</s:layout>
+	
+	<fx:Script>
+		<![CDATA[
+			import au.com.cfobjective.events.SessionEvent;
+			import au.com.cfobjective.model.Scheduled;
+			import au.com.cfobjective.model.Session;
+			import au.com.cfobjective.model.Speaker;
+			
+			import mx.collections.ArrayCollection;
+			
+			[Bindable] public var session:Session;
+			
+			protected function changeSession(event:SessionEvent):void {
+				session = event.session;
+			}
+			
+			protected function gotoFirstSchedule():void {
+				session = ((data as ArrayCollection)[0] as Scheduled).session;
+			}
+			
+			protected function gotoAbout():void {
+				navigator.pushView(AboutView);
+			}
+			
+			protected function gotoSpeaker(speaker:Speaker):void {
+				navigator.pushView(SpeakerView, speaker);
+			}
+		]]>
+	</fx:Script>
+	
+	<fx:Declarations>
+		<s:MultiDPIBitmapSource id="info" source160dpi="@Embed('assets/icons/info24x24.png')" source240dpi="@Embed('assets/icons/info48x48.png')" source320dpi="@Embed('assets/icons/info64x64.png')" />
+		<s:MultiDPIBitmapSource id="speaker" source160dpi="@Embed('assets/icons/speakers24x24.png')" source240dpi="@Embed('assets/icons/speakers48x48.png')" source320dpi="@Embed('assets/icons/speakers64x64.png')" />
+	</fx:Declarations>
+	
+	<s:actionContent>
+		<s:Button icon="{info}" click="gotoAbout()" />
+		<s:Button icon="{speaker}" click="gotoSpeaker(session.speaker)" enabled="{session != null}" />
+	</s:actionContent>
+	
+	<s:viewMenuItems>
+		<s:ViewMenuItem label="About" click="gotoAbout()" iconPlacement="left" icon="{info}" />
+		<s:ViewMenuItem label="Speaker" click="gotoSpeaker(session.speaker)"  enabled="{session != null}" iconPlacement="left" icon="{speaker}" />
+	</s:viewMenuItems>
+
+	<components:ScheduleDisplay schedule="{data as ArrayCollection}" sessionChange="changeSession(event)" />
+	<components:SessionDisplay session="{session}" speakerChange="gotoSpeaker(event.speaker)" />
+</s:View>

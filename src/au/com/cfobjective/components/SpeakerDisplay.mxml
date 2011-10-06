@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:VGroup xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:s="library://ns.adobe.com/flex/spark"
+		 width="100%" height="100%" gap="4" paddingLeft="5" paddingRight="5" paddingTop="5" paddingBottom="5">
+
+	<fx:Metadata>
+		[Event(name="sessionChange", type="au.com.cfobjective.events.SessionEvent")]		
+	</fx:Metadata>
+	
+	<s:states>
+		<s:State name="SingleTalk" />
+		<s:State name="MultipleTalks" />
+	</s:states>
+	
+	<fx:Script>
+		<![CDATA[
+			import au.com.cfobjective.events.SessionEvent;
+			import au.com.cfobjective.events.TwitterEvent;
+			import au.com.cfobjective.model.Scheduled;
+			import au.com.cfobjective.model.Session;
+			import au.com.cfobjective.model.Speaker;
+			
+			import mx.collections.ArrayCollection;
+			import mx.events.FlexEvent;
+			
+ 			private var _schedule:ArrayCollection;
+			
+			[Bindable] public function get schedule():ArrayCollection {
+				return _schedule;
+			}
+
+			public function set schedule(value:ArrayCollection):void {
+				_schedule = value;
+				if (value.length > 1) {
+					currentState = "MultipleTalks";
+				}
+				else {
+					currentState = "SingleTalk";
+				}
+			}
+
+			public function gotoSession(session:Session):void {
+				var event:SessionEvent = new SessionEvent(SessionEvent.CHANGE, session);
+				
+				dispatchEvent(event);
+			}
+		]]>
+	</fx:Script>
+
+	<s:Label text="{schedule.getItemAt(0).session.speaker.name}" width="100%" styleName="title"/>
+	
+	<s:DataGroup dataProvider="{schedule}" width="100%">
+		<s:layout>
+			<s:VerticalLayout />
+		</s:layout>
+		
+		<s:itemRenderer>
+			<fx:Component>
+				<s:ItemRenderer autoDrawBackground="false" click="outerDocument.gotoSession(data.session)" width="100%">
+					<s:layout>
+						<s:VerticalLayout gap="5" />
+					</s:layout>
+					<s:Rect height="5" />
+					<s:Label text="{data.session.title}" width="100%" styleName="subtitle"/>
+					<s:Label text="{data.timeAndLocation}" width="100%" />	
+				</s:ItemRenderer>
+			</fx:Component>
+		</s:itemRenderer>
+	</s:DataGroup>
+	
+	<s:Rect height="10" />
+	
+	<s:Scroller width="100%" height="100%">
+		<s:Group>
+			<s:Label width="100%" text="{schedule.getItemAt(0).session.speaker.bio}" />
+		</s:Group>
+	</s:Scroller>
+
+</s:VGroup>

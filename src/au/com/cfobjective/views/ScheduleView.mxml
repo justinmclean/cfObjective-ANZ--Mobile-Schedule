@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:View xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:s="library://ns.adobe.com/flex/spark"
+		xmlns:views="au.com.cfobjective.views.*" xmlns:components="au.com.cfobjective.components.*"
+		title="Schedule">
+	
+	<fx:Script>
+		<![CDATA[
+			import au.com.cfobjective.events.SessionEvent;
+			import au.com.cfobjective.model.Session;
+			
+			import mx.collections.ArrayCollection;
+			
+			protected function changeSession(session:SessionEvent):void {
+				navigator.pushView(SessionView, session.session);
+			}
+			
+			protected function gotoAbout():void {
+				navigator.pushView(AboutView);
+			}
+			
+			protected function gotoHome():void {
+				navigator.popAll();
+			}
+		]]>
+	</fx:Script>
+	
+	<fx:Declarations>
+		<s:MultiDPIBitmapSource id="info" source160dpi="@Embed('assets/icons/info24x24.png')" source240dpi="@Embed('assets/icons/info24x24.png')" source320dpi="@Embed('assets/icons/info48x48.png')" />
+	</fx:Declarations>
+	
+	<s:actionContent>
+		<s:Button icon="{info}" click="gotoAbout()" />
+	</s:actionContent>
+	
+	<s:viewMenuItems>
+		<s:ViewMenuItem label="About" click="gotoAbout()" iconPlacement="left" icon="{info}" />
+	</s:viewMenuItems>
+
+	<components:ScheduleDisplay schedule="{data as ArrayCollection}" sessionChange="changeSession(event)" />
+</s:View>

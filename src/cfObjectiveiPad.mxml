@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout:TabletLayout xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:s="library://ns.adobe.com/flex/spark"
+					 splashScreenImage="@Embed('assets/backgrounds/iPad1024x768.jpg')"
+					 xmlns:layout="au.com.cfobjective.layouts.*">
+</layout:TabletLayout>

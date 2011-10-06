@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:View xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:s="library://ns.adobe.com/flex/spark" xmlns:views="au.com.cfobjective.views.*" xmlns:components="au.com.cfobjective.components.*"
+		title="cf.Objective(ANZ) Speakers">
+		
+	<s:layout>
+		<s:HorizontalLayout gap="20" />
+	</s:layout>
+	
+	<fx:Script>
+		<![CDATA[
+			import au.com.cfobjective.events.SpeakerEvent;
+			import au.com.cfobjective.model.Session;
+			import au.com.cfobjective.model.Speaker;
+			
+			import mx.collections.ArrayCollection;
+			
+			[Bindable] private var speaker:Speaker;
+			
+			protected function showSpeaker(event:SpeakerEvent):void {
+				speaker = event.speaker;
+			}
+			
+			protected function gotoAbout():void {
+				navigator.pushView(AboutView);
+			}
+			
+			protected function gotoSession(session:Session):void {
+				navigator.pushView(SessionView, session);
+			}
+		]]>
+	</fx:Script>
+	
+	<fx:Declarations>
+		<s:MultiDPIBitmapSource id="info" source160dpi="@Embed('assets/icons/info24x24.png')" source240dpi="@Embed('assets/icons/info48x48.png')" source320dpi="@Embed('assets/icons/info64x64.png')" />
+	</fx:Declarations>
+	
+	<s:actionContent>
+		<s:Button icon="{info}" click="gotoAbout()" />
+	</s:actionContent>
+	
+	<s:viewMenuItems>
+		<s:ViewMenuItem label="About" click="gotoAbout()" iconPlacement="left" icon="{info}" />
+	</s:viewMenuItems>
+
+	<components:SpeakersDisplay speakers="{data as ArrayCollection}" speakerChange="showSpeaker(event)" />
+	<components:SpeakerDisplay schedule="{speaker.schedule}" sessionChange="gotoSession(event.session)" />
+</s:View>

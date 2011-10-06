@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:View xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:s="library://ns.adobe.com/flex/spark" xmlns:components="au.com.cfobjective.components.*"
+		title="Speaker">
+	
+	<fx:Metadata>
+		[Event(name="sessionChange", type="au.com.cfobjective.events.SessionEvent")]		
+	</fx:Metadata>
+	
+	<fx:Script>
+		<![CDATA[
+			import au.com.cfobjective.events.TwitterEvent;
+			import au.com.cfobjective.model.Scheduled;
+			import au.com.cfobjective.model.Session;
+			import au.com.cfobjective.model.Speaker;
+			
+			protected function showTwitter(tweetName:String):void {
+				navigator.pushView(TwitterView, tweetName);
+			}	
+			
+			protected function sendEmail(email:String):void {
+				navigateToURL(new URLRequest("mailto:" + email));
+			}
+			
+			protected function showSession(session:Session):void {
+				navigator.pushView(SessionView, session);
+			}	
+		]]>
+	</fx:Script>
+	
+	<fx:Declarations>
+		<s:MultiDPIBitmapSource id="email" source160dpi="@Embed('assets/icons/email24x24.png')" source240dpi="@Embed('assets/icons/email24x24.png')" source320dpi="@Embed('assets/icons/email48x48.png')" />
+		<s:MultiDPIBitmapSource id="twitter" source160dpi="@Embed('assets/icons/twitter24x24.png')" source240dpi="@Embed('assets/icons/twitter24x24.png')" source320dpi="@Embed('assets/icons/twitter48x48.png')" />
+	</fx:Declarations>
+
+	<s:navigationContent>
+		<s:Button label="Back" click="navigator.popView()"/>
+	</s:navigationContent>
+	
+	<s:actionContent>
+		<s:Button icon="{email}" click="sendEmail((data as Speaker).email)" enabled="{(data as Speaker).email != ''}" />
+		<s:Button icon="{twitter}" click="showTwitter((data as Speaker).twitter)" enabled="{(data as Speaker).twitter != ''}" />	
+	</s:actionContent>
+	
+	<s:viewMenuItems>
+		<s:ViewMenuItem label="Email" click="sendEmail((data as Speaker).email)" enabled="{(data as Speaker).email != ''}" iconPlacement="left" icon="{email}" />
+		<s:ViewMenuItem label="Twitter" click="showTwitter((data as Speaker).twitter)" enabled="{(data as Speaker).twitter != ''}" iconPlacement="left" icon="{twitter}" />
+	</s:viewMenuItems>
+	
+	<components:SpeakerDisplay schedule="{(data as Speaker).schedule}" sessionChange="showSession(event.session)" />
+</s:View>

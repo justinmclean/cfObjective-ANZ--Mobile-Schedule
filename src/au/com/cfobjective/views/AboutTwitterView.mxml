@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:View xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:s="library://ns.adobe.com/flex/spark"
+		title="Twitter" backgroundColor="0x76abca">
+
+	<s:layout>
+		<s:VerticalLayout paddingTop="5" paddingBottom="5" paddingLeft="5" paddingRight="5" />
+	</s:layout>
+	
+	<fx:Script>
+		<![CDATA[
+			protected function showTwitter(name:String):void {
+				navigator.pushView(TwitterView, name);
+			}
+		]]>
+	</fx:Script>
+	
+	<fx:Declarations>
+		<s:MultiDPIBitmapSource id="twitter" source160dpi="@Embed('assets/logos/cfobjectiveTwitter.jpg')" source240dpi="@Embed('assets/logos/cfobjectiveTwitterBig.jpg')" source320dpi="@Embed('assets/logos/cfobjectiveTwitterBig.jpg')" />
+	</fx:Declarations>
+	
+	<s:navigationContent>
+		<s:Button label="Back" click="navigator.popView()" enabled="{navigator.length > 1}" includeInLayout="{navigator.length > 1}" />
+	</s:navigationContent>
+
+	<s:Image source="{twitter}" />
+	
+	<s:VGroup gap="3" width="100%">
+		<s:Label width="100%" text="The official cf.Objective twitter account is" />
+		<s:Label text="@cfobjective_anz" click="showTwitter('cfobjective_anz')" />
+		<s:Rect height="10" />
+		<s:Label width="100%" text="The official cf.Objective twitter hash tag is" />
+		<s:Label text="#cfoanz" click="showTwitter('cfoanz')"/>
+	</s:VGroup>
+</s:View>

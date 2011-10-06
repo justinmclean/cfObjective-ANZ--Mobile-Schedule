@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layouts:CommonApplication xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:s="library://ns.adobe.com/flex/spark" xmlns:layouts="au.com.cfobjective.layouts.*">	
+	<fx:Declarations>
+		<s:MultiDPIBitmapSource id="calendar" source160dpi="@Embed('assets/icons/calendar24x24.png')" source240dpi="@Embed('assets/icons/calendar48x48.png')" source320dpi="@Embed('assets/icons/calendar64x64.png')" />
+		<s:MultiDPIBitmapSource id="session" source160dpi="@Embed('assets/icons/sessions24x24.png')" source240dpi="@Embed('assets/icons/sessions48x48.png')" source320dpi="@Embed('assets/icons/sessions64x64.png')" />
+		<s:MultiDPIBitmapSource id="speaker" source160dpi="@Embed('assets/icons/speakers24x24.png')" source240dpi="@Embed('assets/icons/speakers48x48.png')" source320dpi="@Embed('assets/icons/speakers64x64.png')" />
+		<s:MultiDPIBitmapSource id="twitter" source160dpi="@Embed('assets/icons/twitter24x24.png')" source240dpi="@Embed('assets/icons/twitter48x48.png')" source320dpi="@Embed('assets/icons/twitter64x64.png')" />
+	</fx:Declarations>
+	
+	<s:ViewNavigator label="Schedule" width="100%" height="100%" icon="{calendar}" firstView="au.com.cfobjective.views.ScheduleDualView" firstViewData="{schedule}"/>
+	<s:ViewNavigator label="Sessions" width="100%" height="100%" icon="{session}" firstView="au.com.cfobjective.views.SessionsDualView" firstViewData="{sessions}"/>
+	<s:ViewNavigator label="Speakers" width="100%" height="100%" icon="{speaker}" firstView="au.com.cfobjective.views.SpeakersDualView" firstViewData="{speakers}"/>
+	<s:ViewNavigator label="Twitter" width="100%" height="100%" icon="{twitter}" firstView="au.com.cfobjective.views.TwitterView" firstViewData="cfoanz"/>
+</layouts:CommonApplication>
