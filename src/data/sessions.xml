@@ -1,15 +1,23 @@
-<sessions version="1.0">
-<scheduled day="1" slot="2" time="04:30 PM" date="17/11/2011" room="???" sessionType="session">
+<sessions version="1.1">
+<scheduled day="1" slot="2" time="06:30 PM" date="17/11/2011" room="" sessionType="BoF">
+<speaker name="" twitter="" email="">
+<![CDATA[ ]]>
+</speaker>
+<session title="2DDU Live Recording" stream="All">
+<![CDATA[ ]]>
+</session>
+</scheduled>
+<scheduled day="1" slot="2" time="04:30 PM" date="17/11/2011" room="Chicago" sessionType="session">
 <speaker name="Mark Mandel" twitter="Neurotic" email="mark@compoundtheory.com">
 <![CDATA[
 <p>Mark Mandel is a full time consultant and lead developer on several open source projects, most notably ColdSpring, JavaLoader, Transfer ORM and ColdDoc and has been has been working with ColdFusion for a number of years, including at his very own dot com back in the late 90's.
  </p>
  <p>Mark can often be found blogging at www.compoundtheory.com, which has housed his thoughts on ColdFusion, Java and various aspects of software development for several years. He can also be found as a regular poster on ColdFusion mailing lists, causing havoc in the #coldfusion channel on Dalnet irc network and podcasting on www.2ddu.com.</p>
- <p>	
+ <p>
  When he's not too busy writing open source software and consulting he enjoys spending his extra time training martial arts in a wide variety of disciplines and reading way too much fantasy literature.</p>
 ]]>
 </speaker>
-<session title="A/B Testing with Squabble" stream="CF">
+<session title="A/B Testing with Squabble" stream="ColdFusion">
 <![CDATA[
 <p>You have two designs, one with a blue button, and one with a red button, and you think that both designs could work on your a feature of your application. The problem is, how do you know which one is actually better? Which design is going to convert more users into giving you their hard earned dollars through your application?</p>
  <p>The fact of the matter is, you don't actually know. You can only make a guestimate based on your experience as a web application developer, and hope for the best. &nbsp;Unfortunately, real users can be a fickle bunch that do unpredictable things, and it can be very hard to track what the overall effect of all these changes to a site can make.</p>
@@ -17,65 +25,82 @@
 ]]>
 </session>
 </scheduled>
-<scheduled day="1" slot="2" time="09:00 AM" date="17/11/2011" room="???" sessionType="keynote">
-<speaker name="" twitter="" email="">
-<![CDATA[ ]]>
-</speaker>
-<session title="Adobe Keynote" stream="CF">
-<![CDATA[ ]]>
-</session>
-</scheduled>
-<scheduled day="1" slot="2" time="10:15 AM" date="18/11/2011" room="???" sessionType="session">
-<speaker name="James Talbot" twitter="" email="">
+<scheduled day="1" slot="2" time="04:00 PM" date="18/11/2011" room="Phantom" sessionType="session">
+<speaker name="Andrew Muller" twitter="rebel" email="rebel@rebelspirit.com.au">
 <![CDATA[
-<p>James Talbot has been with Adobe (formerly Macromedia) for over a decade, on both the sales engineering and training teams, and he has many years of experience working with AIR, Flex and building applications. He is currently building some exciting new mobile applications using AIR for Android as well as native Android APIs. He has hosted the Developing iOS and Android applications with Flex course for Lynda.com as well as Flex courses from Total Training.&nbsp; James has traveled worldwide promoting Adobe products, certifying Adobe instructors, and speaking at conferences. He co-wrote Object-Oriented Programming with ActionScript 2.0 and Adobe Flex 3: Training from the Source.&nbsp; James is passionate about rich internet applications and the Flash platform, and he believes Adobe technology is changing the world for the better.</p>
+<p>Developer, trainer, mentor, presenter and blogger, Andrew Muller has&nbsp;been involved with the production, development and education of Rich&nbsp;Internet Applications in Australia since 2002. Working with Flex since&nbsp;it's release in 2004 Andrew's development expertise with Adobe AIR&nbsp;applications has meant creating applications for the likes of&nbsp;Panasonic and Sony Music. Certified Adobe instructor for Flex, AIR,&nbsp;ColdFusion, Flash &amp; Connect; Andrew is also both an Adobe Ambassador&nbsp;and a Adobe Community Professional.<br /><br />Andrew has written articles for the Adobe Developer Center,&nbsp;<a href="http://labs.adobe.com/">labs.adobe.com</a>,&nbsp;<a href="http://BuilderAu.com.au/">BuilderAu.com.au</a>,&nbsp;<a href="http://SitePointInternet.au/">SitePointInternet.au</a>, Digital Media&nbsp;World, Australian Developer and International Developer magazines; and&nbsp;has spoken at Macromedia/Adobe related conferences both in the United&nbsp;States, New Zealand and Australia.</p>
 ]]>
 </speaker>
-<session title="Best Practices in Building Mobile Flex Applications for Android and iOS" stream="CF">
-<![CDATA[ <p>Synopsis forthcoming</p> ]]>
+<session title="Adding Parsley To Your Flex Project" stream="Other">
+<![CDATA[
+<p>Parsley is a popular application framework for Flex and Flash&nbsp;applications. It feature list includes dependency injection, managed&nbsp;events, dynamic commands, messaging and works well with modules in&nbsp;Flex.<br /><br />Find out about Parsley and how to use it in your next project, how to&nbsp;get started quickly with Parsley and hear stories from the trenches&nbsp;from someone who's been using Parsley for modular enterprise&nbsp;applications with Flex.</p>
+]]>
 </session>
 </scheduled>
-<scheduled day="1" slot="2" time="04:00 PM" date="17/11/2011" room="???" sessionType="Break">
+<scheduled day="1" slot="2" time="09:00 AM" date="17/11/2011" room="" sessionType="keynote">
 <speaker name="" twitter="" email="">
 <![CDATA[ ]]>
 </speaker>
-<session title="Break" stream="CF">
+<session title="Adobe Keynote" stream="All">
 <![CDATA[ ]]>
 </session>
 </scheduled>
-<scheduled day="1" slot="2" time="03:30 PM" date="18/11/2011" room="???" sessionType="Break">
+<scheduled day="1" slot="2" time="10:15 AM" date="18/11/2011" room="42nd Street" sessionType="session">
+<speaker name="James Talbot" twitter="" email="">
+<![CDATA[
+<p>James Talbot has been with Adobe (formerly Macromedia) for over a decade, on both the sales engineering and training teams, and he has many years of experience working with AIR, Flex and building applications. He is currently building some exciting new mobile applications using AIR for Android as
+]]>
+<![CDATA[
+well as native Android APIs. He has hosted the Developing iOS and Android applications with Flex course for Lynda.com as well as Flex courses from Total Training.&nbsp; James has traveled worldwide promoting Adobe products, certifying Adobe instructors, and speaking at conferences. He co-wrote Object-Oriented Programming with ActionScript 2.0 and Adobe Flex 3: Training from the Source.&nbsp; James is passionate about rich internet applications and the Flash platform, and he believes Adobe technology is changing the world for the better.</p>
+]]>
+</speaker>
+<session title="Best Practices in Building Mobile Flex Applications for Android and iOS" stream="Flex">
+<![CDATA[
+<p>In this session you will learn best practices to design and deploy mobile applications for the Android and iOS smartphone platforms. Leveraging the capabilities of Flash Builder and the Flex framework, author and instructor, James Talbot sheds light on architecting applications for both phones and tablets, using project libraries, optimizing memory and data connectivity, using mobile specific APIs and building ActionScript skins. We will also cover submitting applications to the Android Marketplace and the Apple App store.</p>
+]]>
+</session>
+</scheduled>
+<scheduled day="1" slot="2" time="04:00 PM" date="17/11/2011" room="" sessionType="Break">
 <speaker name="" twitter="" email="">
 <![CDATA[ ]]>
 </speaker>
-<session title="Break" stream="CF">
+<session title="Break" stream="All">
 <![CDATA[ ]]>
 </session>
 </scheduled>
-<scheduled day="1" slot="2" time="10:30 AM" date="17/11/2011" room="???" sessionType="Break">
+<scheduled day="1" slot="2" time="03:30 PM" date="18/11/2011" room="" sessionType="Break">
 <speaker name="" twitter="" email="">
 <![CDATA[ ]]>
 </speaker>
-<session title="Break" stream="CF">
+<session title="Break" stream="All">
 <![CDATA[ ]]>
 </session>
 </scheduled>
-<scheduled day="1" slot="2" time="11:45 AM" date="17/11/2011" room="???" sessionType="Break">
+<scheduled day="1" slot="2" time="10:30 AM" date="17/11/2011" room="" sessionType="Break">
 <speaker name="" twitter="" email="">
 <![CDATA[ ]]>
 </speaker>
-<session title="Break" stream="CF">
+<session title="Break" stream="All">
 <![CDATA[ ]]>
 </session>
 </scheduled>
-<scheduled day="1" slot="2" time="11:15 AM" date="18/11/2011" room="???" sessionType="Break">
+<scheduled day="1" slot="2" time="11:45 AM" date="17/11/2011" room="" sessionType="Break">
 <speaker name="" twitter="" email="">
 <![CDATA[ ]]>
 </speaker>
-<session title="Break" stream="CF">
+<session title="Break" stream="All">
 <![CDATA[ ]]>
 </session>
 </scheduled>
-<scheduled day="1" slot="2" time="01:30 PM" date="18/11/2011" room="???" sessionType="session">
+<scheduled day="1" slot="2" time="11:15 AM" date="18/11/2011" room="" sessionType="Break">
+<speaker name="" twitter="" email="">
+<![CDATA[ ]]>
+</speaker>
+<session title="Break" stream="All">
+<![CDATA[ ]]>
+</session>
+</scheduled>
+<scheduled day="1" slot="2" time="01:30 PM" date="18/11/2011" room="Phantom" sessionType="session">
 <speaker name="Richard Turner-Jones" twitter="richard_tj" email="">
 <![CDATA[
 <p>An Adobe Certified Instructor and Developer, Richard has been in the multimedia and web application development field for more than 15 years.</p>
@@ -86,61 +111,49 @@ nd Dominos Pizza, to name but a few.</p>
  <p>He provides training in Adobe applications (Flex, ColdFusion and the Creative Suites), as well as server and client side programming and technologies (e.g., PHP, ASP.NET, HTML, JavaScript, XML and CSS), as well as being active in promoting Adobe products and services to the community, managing the Brisbane Flash Platform Group and Brisbane Creative Suite Group.</p>
 ]]>
 </speaker>
-<session title="Building Flex-Friendly Flash Components" stream="CF">
+<session title="Building Flex-Friendly Flash Components" stream="Other">
 <![CDATA[
 <p>There are situations when Flex doesn&rsquo;t provide a suitable solution, and that&rsquo;s where Flash comes in. We&rsquo;ll look at building a custom Flash Component that will integrate into, as well as send and receive data and events with, a Flex application, combining Flex&rsquo;s strong data handling with Flash&rsquo;s visual style.</p>
 ]]>
 </session>
 </scheduled>
-<scheduled day="1" slot="2" time="02:00 PM" date="17/11/2011" room="???" sessionType="session">
-<speaker name="Tanya Gray" twitter="tanya" email="">
-<![CDATA[
-<p>Tanya is a self-employed Flex developer who spends most of her time waiting for her Flex apps to compile, debugging JavaScript and stirring trouble on Twitter.
- </p>
- <p>Once a designer, Tanya moved into the world of software development after finding true beauty in clean code and well-architecte
-]]>
-<![CDATA[
-d applications. She enjoys a challenge and has a soft spot for data-heavy apps, in particular those with map-based GIS requirements. She has recently developed an interest in web application development and is exploring the world of PHP, HTML5 and JavaScript as a means of expanding her knowledge of browser-based software dev.</p>
- <p>
- Away from the computer, Tanya is often involved in community events and enjoys mentoring whenever the opportunity arises. She is co-manager of the Flash Platform User Group in Auckland and can be spotted at many Adobe-related events across Australasia. Her favourite hangout is Twitter (http://twitter.com/tanya) which is the best place to pop by and say hello.</p>
-]]>
-</speaker>
-<session title="Building for the mobile web with Sencha Touch" stream="CF">
-<![CDATA[ <p>Synopsis forthcoming.</p> ]]>
-</session>
-</scheduled>
-<scheduled day="1" slot="2" time="05:00 PM" date="18/11/2011" room="???" sessionType="keynote">
+<scheduled day="1" slot="2" time="05:00 PM" date="18/11/2011" room="" sessionType="keynote">
 <speaker name="" twitter="" email="">
 <![CDATA[ ]]>
 </speaker>
-<session title="Closing Remarks" stream="CF">
+<session title="Closing Remarks" stream="All">
 <![CDATA[ ]]>
 </session>
 </scheduled>
-<scheduled day="1" slot="2" time="02:00 PM" date="17/11/2011" room="???" sessionType="session">
-<speaker name="Justin McLean" twitter="JustinMclean" email="justin@classsoftware.com">
-<![CDATA[
-<p>Justin McLean has more than 15 years experience in developing web based applications and over that time has worked on hundreds of web applications, database driven web sites, multimedia applications and semiconnected desktop applications.</p>
- <p>Justin has managed his own consulting company Class Software for 15 years and has a long history with Adobe/Macromedia/Allaire products in particular ColdFusion (and still has the 3 floppies it originally came on). Justin is also a certified Adobe trainer for ColdFusion and Flex and runs regular training courses at Dynamic Web Training.</p>
-]]>
-</speaker>
-<session title="ColdFusion and Websockets" stream="CF">
-<![CDATA[ <p>Synopsis forthcoming</p> ]]>
-</session>
-</scheduled>
-<scheduled day="1" slot="2" time="09:00 AM" date="18/11/2011" room="???" sessionType="session">
+<scheduled day="1" slot="2" time="09:00 AM" date="18/11/2011" room="42nd Street" sessionType="session">
 <speaker name="Brian Chau" twitter="" email="bchau@adobe.com">
 <![CDATA[
-<p>Brian Chau is the Solution Consultant for Adobe Systems. Brian has been working for Adobe/Macromedia for over 10 years and is an Adobe Certified Expert in Dreamweaver and Flash. Brian is very experienced in web technologies and is a frequent speaker at Adobe seminars, tradeshows and education events. He also has his own blog at http://brianchau.wordpress.com where he shares his knowledge and thoughts on Adobe software.<br />&nbsp;<br />Apart from work, Brian has great interests in all the latest and greatest (or smallest) electronic gadgets. He dreams one day he can have a robot that can be his lifelong friend/partner.</p>
+<p>Brian Chau is the Solution Consultant for Adobe Systems. Brian has been working for Adobe/Macromedia for over 10 years and is an Adobe Certified Expert in Dreamweaver and Flash. Brian is very experienced in web technologies and is a frequent speaker at Adobe seminars, tradeshows and education eve
+]]>
+<![CDATA[
+nts. He also has his own blog at http://brianchau.wordpress.com where he shares his knowledge and thoughts on Adobe software.<br />&nbsp;<br />Apart from work, Brian has great interests in all the latest and greatest (or smallest) electronic gadgets. He dreams one day he can have a robot that can be his lifelong friend/partner.</p>
 ]]>
 </speaker>
-<session title="Combine Flash and Flash Builder together for maximum power" stream="CF">
+<session title="Combine Flash and Flash Builder together for maximum power" stream="Flex">
 <![CDATA[
 <p>Both Flash CS 5.5 and Flash Builder 4.5 have their own strengths (and limitations) when it comes to building rich interactive applications for desktops and mobile devices. When use together, they complement each other very well and give developers a powerful toolset to overcome various development challenges. In this session, we will demonstrate how to integrate Flash component into a Flex project and how to access the component&rsquo;s Actionscript properties, methods and events from within the Flex environment.</p>
 ]]>
 </session>
 </scheduled>
-<scheduled day="1" slot="2" time="10:15 AM" date="18/11/2011" room="???" sessionType="session">
+<scheduled day="1" slot="2" time="11:30 AM" date="18/11/2011" room="42nd Street" sessionType="session">
+<speaker name="Michael Labriola" twitter="mlabriola" email="">
+<![CDATA[
+<p>Michael Labriola is a Founding Partner and Senior Consultant at <a href="http://www.digitalprimates.net/">DigitalPrimates</a>. He has been developingInternet applications since 1995 and has been working with Flex sinceits 1.0 beta program. Michael is a Flex SDK contributor, the architectof both the open source <a href="http://flexunit.org/">FlexUnit</a> and <a href="http://spoon.as/">SpoonFramework</a> projects.</p>
+ <p>As an international speaker and team mentor on Flex and AIR projects, hehas consulted for many of the world's most recognized brands. His freetime is spent escaping from technology through wine and food.</p>
+]]>
+</speaker>
+<session title="Dumpster Diving" stream="Flex">
+<![CDATA[
+<p>Take a deep dive into the Flash Player garbage collection infrastructure. Learn what is happening behind the scenes and how flash player makes decisions about what to keep, what to toss and when. We will include discussions of how the player works today, some changes coming soon and a few guesses on the long term approach.</p>
+]]>
+</session>
+</scheduled>
+<scheduled day="1" slot="2" time="10:15 AM" date="18/11/2011" room="Chicago" sessionType="session">
 <speaker name="Andrew Mercer" twitter="webonix" email="andrew@webonix.net">
 <![CDATA[
 <p> Andrew Mercer stopped looking for Web Application Servers in 1996 when he discovered ColdFusion and used it to pull data out of the corporate database and splatted the results onto a web page - with links to get more data! Two jobs latter he started serious web development and soon discovered th
@@ -150,7 +163,7 @@ e wonders of Application Frameworks in the form of FuseBox 2. Shortly afterwards
  <p> Being the total techno nerd that he is, when he is not at working doing ColdFusion development, he is at home playing with Railo. And if that is not enough ColdFusion for one person, he is also the Community Manager for Railo Australia.</p>
 ]]>
 </speaker>
-<session title="Dynamic HTML - the RESTful way" stream="CF">
+<session title="Dynamic HTML - the RESTful way" stream="ColdFusion">
 <![CDATA[
 <p>There is a lot of information to tell you what RESTful services are not and that you are going it all wrong, but not a lot of information of how to actually who to build them correctly.
  </p>
@@ -165,13 +178,13 @@ e wonders of Application Frameworks in the form of FuseBox 2. Shortly afterwards
 ]]>
 </session>
 </scheduled>
-<scheduled day="1" slot="2" time="11:30 AM" date="18/11/2011" room="???" sessionType="session">
+<scheduled day="1" slot="2" time="11:30 AM" date="18/11/2011" room="Phantom" sessionType="session">
 <speaker name="Andrew Myers" twitter="am2605" email="">
 <![CDATA[
 <p>Andrew is a web developer employed by RISE (Racing Information Services Enterprises). RISE provides web solutions to the Australian harness racing industry, including the national harness racing website <a href="http://www.harness.org.au">www.harness.org.au</a>, and a number of additional sites which use Mura CMS. He has 11 years web development experience, and has been working with ColdFusion for the past 6 years.</p>
 ]]>
 </speaker>
-<session title="Extending Mura CMS with Custom Plugins" stream="CF">
+<session title="Extending Mura CMS with Custom Plugins" stream="Other">
 <![CDATA[
 <p>In this session there will be an introduction to plugins for the open source Mura Content Management system, and a demonstration of how to create a plugin to add custom functionality to Mura.</p>
  <p>The session will begin with an overview of Mura's plugin system, demonstrating how to install a free plugin from the Mura App Store, and then briefly give a high level overview of the Mura API sections which are relevant to creating plugins.</p>
@@ -179,42 +192,42 @@ e wonders of Application Frameworks in the form of FuseBox 2. Shortly afterwards
 ]]>
 </session>
 </scheduled>
-<scheduled day="1" slot="2" time="01:30 PM" date="18/11/2011" room="???" sessionType="session">
+<scheduled day="1" slot="2" time="01:30 PM" date="18/11/2011" room="42nd Street" sessionType="session">
 <speaker name="Drew Bourne" twitter="" email="drew@firstbourne.com">
 <![CDATA[
-<p>Drew is a Senior Software Developer with movideo, where he crafts code for an online video SaaS and mentors the team on testing, API design, and being more awesome. Previous roles as Designer, Animator, and Instructor has given him the perspective to keep solutions user focussed, flowing and understandable.&nbsp;As an open source proponent, Drew is keen on building and sharing tools to improve developer productivity and software quality.&nbsp;To aid with testing Flash/Flex he&nbsp;ported Hamcrest to AS3 and authored&nbsp;<a href="http://mockolate.org/" target="_blank">Mockolate</a>.&nbsp;</p>
+<p>Drew is a Senior Software Developer with movideo, where he crafts code for an online video SaaS and mentors the team on testing, API design, and being more awesome. Previous roles as Designer, Animator, and Instructor has given him the perspective to keep solutions user focussed, flowing and unde
+]]>
+<![CDATA[
+rstandable.&nbsp;As an open source proponent, Drew is keen on building and sharing tools to improve developer productivity and software quality.&nbsp;To aid with testing Flash/Flex he&nbsp;ported Hamcrest to AS3 and authored&nbsp;<a href="http://mockolate.org/" target="_blank">Mockolate</a>.&nbsp;</p>
 ]]>
 </speaker>
-<session title="Faking it with Mockolate" stream="CF">
+<session title="Faking it with Mockolate" stream="Flex">
 <![CDATA[
 <p>Whether you are doing testing for &lsquo;test driven development&rsquo;, &lsquo;post crunch time fill in the gaps&rsquo;, or &lsquo;exploratory I have no idea what is going on&rsquo; Mockolate can help by providing Mock Objects and Test Spies.&nbsp;<br />A Mock Object can be used to simulate the behaviour of complex, real (non-mock) objects when using the real object would be impractical or impossible. A Test Spy records which methods are called, which getters are got, which setters are set. Appropriate use of these tools can improve test focus by narrowing the scope of interactions between the class under test and its collaborators.&nbsp;<br />In this talk I will explain how to use Mockolate to fake collaborators with fake behaviour.</p>
 ]]>
 </session>
 </scheduled>
-<scheduled day="1" slot="2" time="04:30 PM" date="17/11/2011" room="???" sessionType="session">
+<scheduled day="1" slot="2" time="04:30 PM" date="17/11/2011" room="Chicago" sessionType="session">
 <speaker name="Geoff Bowers" twitter="modius" email="modius@daemon.com.au">
 <![CDATA[
 <p>Geoff's the CEO and application architect for Daemon Internet Consultants. As an Adobe Master Instructor, father of FarCry, and keeper of the Goog, Geoff keeps his hand in doing a bit of ColdFusion here and there.</p>
- <p>No stranger to putting on a song and dance, Geoff's been invited to speak a
-]]>
-<![CDATA[
-t Allaire/Macromedia DevCons (1999 Boston, 2000 Washington and 2001 Orlando), InternetWorld, FlashKit and other venues. Sick of traipsing off to the US, Geoff and fellow Daemonites founded webDU and decided to have the world's best technology conference right here in the Antipodes.</p>
+ <p>No stranger to putting on a song and dance, Geoff's been invited to speak at Allaire/Macromedia DevCons (1999 Boston, 2000 Washington and 2001 Orlando), InternetWorld, FlashKit and other venues. Sick of traipsing off to the US, Geoff and fellow Daemonites founded webDU and decided to have the world's best technology conference right here in the Antipodes.</p>
  <p>Apart from all the hard yakka working for Daemon, Geoff's a regular poster to the <a href="http://blog.daemon.com.au/" target="_blank">Daemonite</a> blog, one of the lead developers behind <a href="http://www.farcrycms.org/">FarCry CMS</a> , and Master of <a href="http://fullasagoog.com/" target="_blank">Full As A Goog</a>. And in his freetime, he's a <a href="http://www.cfug.org.au/" target="_blank">CFUG regular</a> and the list-admin for CFAUSSIE, FUGLI and a host of other <a href="http://lists.daemon.com.au/" target="_blank">Australian mailing lists</a>. Geoff's also the co-author of the best selling "ColdFusion Developer Study Guide".</p>
 ]]>
 </speaker>
-<session title="FarCry: The Definitive Guide" stream="CF">
+<session title="FarCry: The Definitive Guide" stream="ColdFusion">
 <![CDATA[
 <p>One of the oldest and most active open source communities in the ColdFusion biosphere. &nbsp;Often eschewed as "too complex", FarCry is easy, just a little bit different. Like a Swiss Army Knife for content heavy applications, FarCry powers many of the worlds largest CFML sites. Join the FarCry founder and self-styled Benevolent Dictator for a peek under the hood of this awesome framework.&nbsp;</p>
 ]]>
 </session>
 </scheduled>
-<scheduled day="1" slot="2" time="02:00 PM" date="17/11/2011" room="???" sessionType="session">
+<scheduled day="1" slot="2" time="02:00 PM" date="17/11/2011" room="42nd Street" sessionType="session">
 <speaker name="Sandy Mamoli" twitter="smamol" email="sandy@sprog.co.nz">
 <![CDATA[
 <p>Sandy worked on her first Agile project with Sony Ericsson in 2003, got bitten by the Agile bug and has never looked back since. She is one of New Zealand&rsquo;s leading Agile advocates and works as an independent Agile coach helping people to work, talk, and be as Agile as they possibly can and want to be. She coaches, teaches and re-factors organisations and individual teams and tries to learn as much in the process as she can.&nbsp;</p>
 ]]>
 </speaker>
-<session title="Flexing your Agile Muscle - Agile Technical Concepts Explained" stream="CF">
+<session title="Flexing your Agile Muscle - Agile Technical Concepts Explained" stream="Flex">
 <![CDATA[
 <p>Continuous integration, acceptance test driven development (ATDD), specification by example and continuous deployment: The list of have-to-know concepts is growing and you have this nagging feeling that you should really get started so you won&rsquo;t miss out on the fun.&nbsp;<br /><br />Learn w
 ]]>
@@ -223,25 +236,31 @@ hat basic Agile technical concepts mean, understand how you can benefit from usi
 ]]>
 </session>
 </scheduled>
-<scheduled day="1" slot="2" time="05:30 PM" date="17/11/2011" room="???" sessionType="Break">
+<scheduled day="1" slot="2" time="05:30 PM" date="17/11/2011" room="" sessionType="Break">
 <speaker name="" twitter="" email="">
 <![CDATA[ ]]>
 </speaker>
-<session title="Happy Hour in the Foyer" stream="CF">
+<session title="Happy Hour in the Foyer" stream="All">
 <![CDATA[ <p>...in the Foyer</p> ]]>
 </session>
 </scheduled>
-<scheduled day="1" slot="2" time="12:00 PM" date="17/11/2011" room="???" sessionType="session">
+<scheduled day="1" slot="2" time="12:00 PM" date="17/11/2011" room="Phantom" sessionType="session">
 <speaker name="Mark Stanton" twitter="" email="mark@gruden.com">
 <![CDATA[
-<p>Mark Stanton is a specialist in Internet systems design and development. Mark has a passion for many aspects of the web from usability &amp; information architecture, to HTML, CSS and JavaScript, through to software design &amp; development and languages such as ColdFusion, Java, ASP, PHP, Ruby and Python.</p>
+<p>Mark Stanton is a specialist in Internet systems design and development. Mark has a passion for many aspects of the web from usability &amp; information architecture, to HTML, CSS and JavaScript, through to software design &amp; development and languages such as ColdFusion, Java, ASP, PHP, Ruby a
+]]>
+<![CDATA[
+nd Python.</p>
  <p>Mark is highly regarded within the online community and regularly provides support, consultation and presentations to other web geeks.He is a founding member of the Web Standards Group which aims to promote best practices to web designers and developers through a range of educational forums and activities.At Gruden, Mark's role is to further the technical capabilities of the company while ensuring a streamlined and efficient approach to development and helping clients maximise the effectiveness of their online projects.</p>
 ]]>
 </speaker>
-<session title="Has MySQL Finally Grown Up?" stream="CF">
+<session title="Has MySQL Finally Grown Up?" stream="Other">
 <![CDATA[
 <p>Much has changed in the MySQL world over the past few years with it being first bought by Sun and then gobbled by Oracle. So is it going to be sucked of oxygen or are Oracle serious about keeping MySQL popular and open?</p>
- <p>The good news is that despite going quiet for a long while (one releases in 4+ years) it looks like Oracle have shown some love and rolled out significant changes and welcome improvements that improve the MySQL's overall maturity and performance.</p>
+ <p>The good news is that despite going quiet for a long while (one relea
+]]>
+<![CDATA[
+ses in 4+ years) it looks like Oracle have shown some love and rolled out significant changes and welcome improvements that improve the MySQL's overall maturity and performance.</p>
  <p>This talk will walk through practical examples that demonstrate how these features can be best used.</p>
  <p>Topics include:</p>
  <ul>
@@ -253,111 +272,108 @@ hat basic Agile technical concepts mean, understand how you can benefit from usi
 ]]>
 </session>
 </scheduled>
-<scheduled day="1" slot="2" time="02:30 PM" date="18/11/2011" room="???" sessionType="session">
+<scheduled day="1" slot="2" time="02:30 PM" date="18/11/2011" room="Phantom" sessionType="session">
 <speaker name="Lachlan Hardy" twitter="lachlanhardy" email="lachlan@lachstock.com.au">
 <![CDATA[
 <p class="teaser">Lachlan Hardy runs the Dev Team at <a href="http://ninefold.com/">Ninefold</a>, where he is responsible for evolving the site, management console, APIs and developer tools to meet the needs of Ninefold's customers. He has spent his career working on projects ranging between massive high-profile sites and applications as well as pretty little fun ones. Lachlan firmly believes in making a beautiful free and open web.</p>
 ]]>
 </speaker>
-<session title="Improve Your Development Process with GIT" stream="CF">
+<session title="Improve Your Development Process with GIT" stream="Other">
 <![CDATA[
-<p>A commonly used version control system in the web development community is Subversion -- a centralized system that relies on being connected to a central server. The next generation version control systems are &ldquo;decentralized&rdquo;, in that version control tasks do not rely on a central server. Decentralized version control systems are more efficient and offer a more practical way of software development. In this session, Lachlan takes you through the benefits and changes using Git, a decentralized version control system, will bring to your development process.</p>
+<p>A commonly used version control system in the web development community is Subversion -- a centralized system that relies on being connected to a central server. The next generation version control systems are &ldquo;decentralized&rdquo;, in that version control tasks do not rely on a central ser
+]]>
+<![CDATA[
+ver. Decentralized version control systems are more efficient and offer a more practical way of software development. In this session, Lachlan takes you through the benefits and changes using Git, a decentralized version control system, will bring to your development process.</p>
 ]]>
 </session>
 </scheduled>
-<scheduled day="1" slot="2" time="10:45 AM" date="17/11/2011" room="???" sessionType="session">
+<scheduled day="1" slot="2" time="10:45 AM" date="17/11/2011" room="42nd Street" sessionType="session">
 <speaker name="Chris Velevitch" twitter="chrisvelevitch" email="">
 <![CDATA[
 <p>Chris Velevitch is a contract flex developer developer. Chris also the&nbsp;founder and manager of the Adobe Platform Users Group in Sydney.</p>
 ]]>
 </speaker>
-<session title="Introduction to Flex 4.5 By Example" stream="CF">
+<session title="Introduction to Flex 4.5 By Example" stream="Flex">
 <![CDATA[
 <p>Chris Velevitch will introduce you to Flex 4.5 by way of examples&nbsp;covering such things as data binding, event consuming and production,<br />custom events, the datagrid with filtering and item renderers. This&nbsp;session is for developers who consider themselves to be beginner to&nbsp;immediate at Flex 4.5.</p>
 ]]>
 </session>
 </scheduled>
-<scheduled day="1" slot="2" time="12:00 PM" date="17/11/2011" room="???" sessionType="session">
+<scheduled day="1" slot="2" time="12:00 PM" date="17/11/2011" room="Chicago" sessionType="session">
 <speaker name="Kai Koenig" twitter="agentK" email="kai@ventego-creative.co.nz">
 <![CDATA[
 <p>Kai is a Software Solutions Architect from New Zealand. A few years ago he started new venture providing professional services for Adobe's rich client and enterprise technologies (and other web platforms) under the brand Ventego Creative.</p>
- <p>Before that he spent a few years working as a Soft
-]]>
-<![CDATA[
-ware Solutions Architect for Macromedia and Adobe partner companies in Europe and Asia-Pacific. Kai started his Adobe career quite a few years ago when using Dreamweaver 2 to build HTML web pages during an university class. From there he lectured in Java before moving into software development using ColdFusion, Java, Flex and other technologies.</p>
+ <p>Before that he spent a few years working as a Software Solutions Architect for Macromedia and Adobe partner companies in Europe and Asia-Pacific. Kai started his Adobe career quite a few years ago when using Dreamweaver 2 to build HTML web pages during an university class. From there he lectured in Java before moving into software development using ColdFusion, Java, Flex and other technologies.</p>
  <p class="p1">Kai holds a variety of Adobe certifications and is an Adobe Master Instructor for the Flex, ColdFusion, Connect and LiveCycle curriculum. He holds a Master of Science degree in Maths, Computer Science and Philosophy and always tries to find a way of digging deeper into the theories of language and parser construction.</p>
  <p>He's an Adobe Ambassador in Asia-Pacific, an Adobe Community Professional for ColdFusion and runs the Flash Platform User Group in Wellington, New Zealand.&nbsp;Besides that Kai is blogging as Agent K in Blog in Black (http://www.bloginblack.de), regularly publishing reviews and technical articles on Adobe technology in several German IT-magazines and enjoying his life in New Zealand jointly with his wife Diane.&nbsp;</p>
 ]]>
 </speaker>
-<session title="JVM tuning for the rest of us" stream="CF">
+<session title="JVM tuning for the rest of us" stream="ColdFusion">
 <![CDATA[
-<p class="p1">Historically nearly all of Adobe's server products are built on top of Java and a JVM so that regular cross-overs into the Java world when it comes to deploying or extending Adobe solutions are unavoidable.&nbsp;The Java Virtual Machine is the foundation of any Java-based application o
-]]>
-<![CDATA[
-r architecture and still most of us treat it as a black box and have to apply some dark arts when it comes to monitoring, adjusting and tweaking JVM settings. </p>
+<p class="p1">Historically nearly all of Adobe's server products are built on top of Java and a JVM so that regular cross-overs into the Java world when it comes to deploying or extending Adobe solutions are unavoidable.&nbsp;The Java Virtual Machine is the foundation of any Java-based application or architecture and still most of us treat it as a black box and have to apply some dark arts when it comes to monitoring, adjusting and tweaking JVM settings. </p>
  <p class="p1">This talk will be an introduction into memory management and garbage collection tuning with the JVM. We will start with some discussion about memory sizing, the different memory generations and the object lifecycle across those. From there on we'll look at memory management in large 64-bit heaps and accompanying issues with cleaning up the mess (e.g. the available JVM Garbage Collection strategies and when to use which). Along the way I'll show a few useful tools to monitor JVMs, to inspect heap memory and to look into resp. visualise the Garbage Collection behaviour of our apps.</p>
 ]]>
 </session>
 </scheduled>
-<scheduled day="1" slot="2" time="01:00 PM" date="17/11/2011" room="???" sessionType="Break">
+<scheduled day="1" slot="2" time="01:00 PM" date="17/11/2011" room="" sessionType="Break">
 <speaker name="" twitter="" email="">
 <![CDATA[ ]]>
 </speaker>
-<session title="Lunch" stream="CF">
+<session title="Lunch" stream="All">
 <![CDATA[ ]]>
 </session>
 </scheduled>
-<scheduled day="1" slot="2" time="12:30 PM" date="18/11/2011" room="???" sessionType="Break">
+<scheduled day="1" slot="2" time="12:30 PM" date="18/11/2011" room="" sessionType="Break">
 <speaker name="" twitter="" email="">
 <![CDATA[ ]]>
 </speaker>
-<session title="Lunch" stream="CF">
+<session title="Lunch" stream="All">
 <![CDATA[ ]]>
 </session>
 </scheduled>
-<scheduled day="1" slot="2" time="09:00 AM" date="18/11/2011" room="???" sessionType="session">
+<scheduled day="1" slot="2" time="09:00 AM" date="18/11/2011" room="Phantom" sessionType="session">
 <speaker name="Geoff Bowers" twitter="modius" email="modius@daemon.com.au">
 <![CDATA[
 <p>Geoff's the CEO and application architect for Daemon Internet Consultants. As an Adobe Master Instructor, father of FarCry, and keeper of the Goog, Geoff keeps his hand in doing a bit of ColdFusion here and there.</p>
- <p>No stranger to putting on a song and dance, Geoff's been invited to speak at Allaire/Macromedia DevCons (1999 Boston, 2000 Washington and 2001 Orlando), InternetWorld, FlashKit and other venues. Sick of traipsing off to the US, Geoff and fellow Daemonites founded webDU and decided to have the world's best technology conference right here in the Antipodes.</p>
+ <p>No stranger to putting on a song and dance, Geoff's been invited to speak a
+]]>
+<![CDATA[
+t Allaire/Macromedia DevCons (1999 Boston, 2000 Washington and 2001 Orlando), InternetWorld, FlashKit and other venues. Sick of traipsing off to the US, Geoff and fellow Daemonites founded webDU and decided to have the world's best technology conference right here in the Antipodes.</p>
  <p>Apart from all the hard yakka working for Daemon, Geoff's a regular poster to the <a href="http://blog.daemon.com.au/" target="_blank">Daemonite</a> blog, one of the lead developers behind <a href="http://www.farcrycms.org/">FarCry CMS</a> , and Master of <a href="http://fullasagoog.com/" target="_blank">Full As A Goog</a>. And in his freetime, he's a <a href="http://www.cfug.org.au/" target="_blank">CFUG regular</a> and the list-admin for CFAUSSIE, FUGLI and a host of other <a href="http://lists.daemon.com.au/" target="_blank">Australian mailing lists</a>. Geoff's also the co-author of the best selling "ColdFusion Developer Study Guide".</p>
 ]]>
 </speaker>
-<session title="Make Your Website Fly! State of the Art Web Application Acceleration." stream="CF">
+<session title="Make Your Website Fly! State of the Art Web Application Acceleration." stream="Other">
 <![CDATA[
 <p>Going in circles retrofitting a legacy app with one foot nailed to the floor? Optimised the daylights out of your web app but still want that nitro boost to performance? Building a modern "HTTP Accelerator" or "Reverse Proxy" is easy. &nbsp;Learn the strategies you need to turbo charge your site by sweeping all the (crap code|lousy infrastructure|insert problem) under the carpet, and caching pages in front of your web site instead.</p>
 ]]>
 </session>
 </scheduled>
-<scheduled day="1" slot="2" time="10:15 AM" date="18/11/2011" room="???" sessionType="session">
+<scheduled day="1" slot="2" time="10:15 AM" date="18/11/2011" room="Phantom" sessionType="session">
 <speaker name="Dennis Clark" twitter="boomerangfish" email="">
 <![CDATA[
 <p>Dennis is a CF developer who spent the previous 12 years living in the USA and working in a large healthcare organisation there, but is now back in Sydney and working at Daemon. He's a contributor to the Model-Glue framework and has submitted patches to a few open source projects in and out of ColdFusion over the years.</p>
 ]]>
 </speaker>
-<session title="Managing Code Changes with a Source Control System" stream="CF">
+<session title="Managing Code Changes with a Source Control System" stream="Other">
 <![CDATA[
 <ul>
  <li>Different types of code change requests (bug fixes, enhancements, alterations)</li>
  <li>The good and bad ways code changes move from development to production</li>
  <li>How code quality concepts can be applied to change quality</li>
- <li>How distributed source control systems give develop
-]]>
-<![CDATA[
-ers more control over their own code changes</li>
+ <li>How distributed source control systems give developers more control over their own code changes</li>
  <li>Practices for making more manageable code changes</li>
  <li>How source control can be integrated with other tools and systems to improve the software development process.</li>
  </ul>
 ]]>
 </session>
 </scheduled>
-<scheduled day="1" slot="2" time="04:30 PM" date="17/11/2011" room="???" sessionType="session">
+<scheduled day="1" slot="2" time="04:30 PM" date="17/11/2011" room="Phantom" sessionType="session">
 <speaker name="Phil Haeusler" twitter="philhaeusler" email="">
 <![CDATA[
 <p>Phil has been developing desktop, web and mobile solutions for clients for over 15 years.&nbsp; He is an independent software developer based in Melbourne, Australia with a TODO list he can never seem to get to the end of.<br /><br />He also likes to try his hand at SEO: Dad, Husband, Mac, Flash, Flex, AIR, ColdFusion, iOS, Android, PlayBook, Codewar Quizmaster, Consulting, Cloud, Hosting plus a heap of other stuff but realises he isn't very good at it.</p>
 ]]>
 </speaker>
-<session title="Marco Polo - Navigating for Profit" stream="CF">
+<session title="Marco Polo - Navigating for Profit" stream="Other">
 <![CDATA[
 <p>Geolocation can add tremendous value the user experience of many apps and websites by subtly improving the quality of information displayed to users. While you may not want to exclude anyone from Aruba from your checkout form, why do rest of us have to scroll past it to select Australia from your
 ]]>
@@ -376,7 +392,7 @@ drop down list?</p>
 ]]>
 </session>
 </scheduled>
-<scheduled day="1" slot="2" time="02:30 PM" date="18/11/2011" room="???" sessionType="session">
+<scheduled day="1" slot="2" time="02:30 PM" date="18/11/2011" room="42nd Street" sessionType="session">
 <speaker name="Mark Szulc" twitter="mszulc" email="mszulc@adobe.com">
 <![CDATA[
 <p>Mark Szulc, Technical Director for Adobe Australia and New Zealand, has morethan fifteen years of experience in the IT and graphic arts industries and 5years with Adobe. Specializing in cross media publishing and business process improvement, he has held various positions from creating some of Au
@@ -388,17 +404,19 @@ stralia &amp;New Zealand&rsquo;s first online web presences, working on the lead
  <p>When not out &amp; about with Adobe, Mark can be found tinkering away on his ownweb site (www.markszulc.com), immersed in an online game, exploring the world or trying to write a new song in his home studio.</p>
 ]]>
 </speaker>
-<session title="Model-Driven-Development with Flash Builder and Flex" stream="CF">
-<![CDATA[ <p>Synopsis forthcoming.</p> ]]>
+<session title="Model-Driven-Development with Flash Builder and Flex" stream="Flex">
+<![CDATA[
+<p>This session will cover Model Driven Development techniques using Flash Builder as well as&nbsp;LiveCycle&nbsp;Data Services and the new Adobe Digital Enterprise Platform (ADEP). Mark will be cover how to quickly build &amp; optimize enterprise RIA projects that span both Web, Desktop &amp; Mobile and will include calling data from multiple sources, data&nbsp;persistence, extending the model as well as some details on the latest Data Services release.</p>
+]]>
 </session>
 </scheduled>
-<scheduled day="1" slot="2" time="12:00 PM" date="17/11/2011" room="???" sessionType="session">
+<scheduled day="1" slot="2" time="12:00 PM" date="17/11/2011" room="Chicago" sessionType="session">
 <speaker name="AJ Dyka" twitter="ajdyka" email="">
 <![CDATA[
 <p>AJ has been working with ColdFusion since 2005 when Robin Hilliard trained me in CF7MX (always choose structKeyExists over isDefined!). Since then he's working in various roles as a contract developer as well as in full time roles working on a variety of eLearning applications. AJ is now working at Learnosity as Release Manager, where we are coding for legacy applications stuck on CF7MX and our own products using Railo 3.2. AJ thinks that it's time to give back to the community and share his insights on application server configuration.</p>
 ]]>
 </speaker>
-<session title="Opensource CFML development and deployment in the cloud" stream="CF">
+<session title="Opensource CFML development and deployment in the cloud" stream="ColdFusion">
 <![CDATA[
 <ul>
  <li>Setting up a Ninefold micro instance</li>
@@ -409,74 +427,75 @@ stralia &amp;New Zealand&rsquo;s first online web presences, working on the lead
 ]]>
 </session>
 </scheduled>
-<scheduled day="1" slot="2" time="04:00 PM" date="18/11/2011" room="???" sessionType="session">
-<speaker name="Andrew Muller" twitter="rebel" email="rebel@rebelspirit.com.au">
+<scheduled day="1" slot="2" time="02:00 PM" date="17/11/2011" room="Chicago" sessionType="session">
+<speaker name="Justin McLean" twitter="JustinMclean" email="justin@classsoftware.com">
 <![CDATA[
-<p>Developer, trainer, mentor, presenter and blogger, Andrew Muller has been involved with the production, development and education of Rich Internet Applications in Australia since 2002. Working with Flex since it's release in 2004 Andrew's development expertise with Adobe AIR applications has meant creating applications for the likes of Panasonic and Sony Music. Certified Adobe instructor for Flex, AIR, ColdFusion, Flash &amp; Connect; Andrew is also both an Adobe Ambassador and a Adobe Community Professional.<span style="font-style: italic;">&nbsp;</span></p>
- <p>Andrew has written articles for the Adobe Developer Center, labs.adobe.com, BuilderAu.com.au, SitePointInternet.au, Digital Media World, Australian Developer and International Developer magazines; and has spoken at Macromedia/Adobe related conferences both in the United States, New Zealand and Australia.</p>
+<p>Justin McLean has more than 15 years experience in developing web based applications and over that time has worked on hundreds of web applications, database driven web sites, multimedia applications and semiconnected desktop applications.</p>
+ <p>Justin has managed his own consulting company Class Software for 15 years and has a long history with Adobe/Macromedia/Allaire products in particular ColdFusion (and still has the 3 floppies it originally came on). Justin is also a certified Adobe trainer for ColdFusion and Flex and runs regular training courses at Dynamic Web Training.</p>
 ]]>
 </speaker>
-<session title="Parsley Flex session" stream="CF">
-<![CDATA[ ]]>
-</session>
-</scheduled>
-<scheduled day="1" slot="2" time="11:30 AM" date="18/11/2011" room="???" sessionType="session">
-<speaker name="Michael Labriola" twitter="mlabriola" email="">
+<session title="Real time communication with ColdFusion and Websockets" stream="ColdFusion">
 <![CDATA[
-<p>Michael Labriola is a Founding Partner and Senior Consultant at <a href="http://www.digitalprimates.net/">DigitalPrimates</a>. He has been developingInternet applications since 1995 and has been working with Flex sinceits 1.0 beta program. Michael is a Flex SDK contributor, the architectof both the open source <a href="http://flexunit.org/">FlexUnit</a> and <a href="http://spoon.as/">SpoonFramework</a> projects.</p>
- <p>As an international speaker and team mentor on Flex and AIR projects, hehas consulted for many of the world's most recognized brands. His freetime is spent escaping from technology through wine and food.</p>
-]]>
-</speaker>
-<session title="Talking Trash" stream="CF">
-<![CDATA[
-<p>Take a deep dive into the Flash Player garbage collection infrastructure. Learn what is happening behind the scenes and how flash player makes decisions about what to keep, what to toss and when. We will include discussions of how the player works today, some changes coming soon and a few guesses on the long term approach.</p>
+<p><span>WebSockets </span>enable you to do what was impossible with HTTP only a short time ago. It allows fast bidirectional communication in real time with very little protocol overhead. This session looks at in detail how the WebSocket protocol works, how it compares to other protocols, browser support (and fallbacks) and how you can use WebSockets with ColdFusion.</p>
 ]]>
 </session>
 </scheduled>
-<scheduled day="1" slot="2" time="11:30 AM" date="18/11/2011" room="???" sessionType="session">
+<scheduled day="1" slot="2" time="11:30 AM" date="18/11/2011" room="Chicago" sessionType="session">
 <speaker name="Mike Brunt " twitter="cfwhisperer" email="">
 <![CDATA[
-<p>Mike Brunt has been coding web applications since 1993 and began using ColdFusion at version 1.54 in 1995-6. &nbsp;He designed and created the first on-line international industrial equipment mart in 1997 (Power Bank International) at the request of a Cummins Engine Company subsidiary. &nbsp;In 1998 he worked with Kodak and Lucent Technologies to create a pioneering web based TeleRadiology cross-consult portal when Radiologists and Primary Care Physicians could review patient medical images. &nbsp;</p>
+<p>Mike Brunt has been coding web applications since 1993 and began using ColdFusion at version 1.54 in 1995-6. &nbsp;He designed and created the first on-line international industrial equipment mart in 1997 (Power Bank International) at the request of a Cummins Engine Company subsidiary. &nbsp;In 1
+]]>
+<![CDATA[
+998 he worked with Kodak and Lucent Technologies to create a pioneering web based TeleRadiology cross-consult portal when Radiologists and Primary Care Physicians could review patient medical images. &nbsp;</p>
  <p>Allaire recruited Mike in 1999 to join a ColdFusion-JRun consulting team. &nbsp;This team was dispatched world-wide to help Allaire then Macromedia clients design and troubleshoot ColdFusion applications. &nbsp;In 2001 Mike co-founded his own company &ndash; Webapper Services LLC along with another Macromedia consultant, Patrick Quinn. &nbsp;From 1999 to the present day, Mike has been very focused on the server-side of ColdFusion helping users worldwide to troubleshoot applications and to create strategies which ensure Enterprise level ColdFusion applications can be scaled effectively and efficiently.</p>
 ]]>
 </speaker>
-<session title="Taming 64-bit JVM's With BigMemory From Terraccotta-EHCACHE In ColdFusion" stream="CF">
+<session title="Taming 64-bit JVM's With BigMemory From Terraccotta-EHCACHE In ColdFusion" stream="ColdFusion">
 <![CDATA[
-<p>In many ways, I am probably one of the most myopic presenters having spent so long talking about the JVM but the reality is this. The default install of ColdFusion is eons away from providing anything like a scalable core for CF applications and it gets worse with 64-bit installs.<br /><br />Most of the time that ColdFusion has depended on a JVM we have been in a 32-bit world, this meant we had a 2GB ceiling for the JVM heap and when we take intoconsideration the permanent generation which exists in addition to the JVM heap this meant 1.4GB maximum for the heap, which comprises of the young/new and old/tenured generations combined.<br /><br />Along came 64-bit which blasts us past the old 2GB limitation on 32-bit, caused by contiguous memory architecture. However, we are now seeing elongated pauses forJVM memory collection, also known as &ldquo;garbage collection&rdquo;. The larger the heaps, the longer seem the pauses, here is a quote from a recent technical blog on the issue &ldquo;a 20GB data set will take tens of seconds of stop-the-world time to compact&rdquo;. Obviously, a pause in excess of ten seconds is not acceptable in a web application.<br /><br />In the presentation, which will be largely practical, we will show some mitigation strategies for a 64-bit JVM which hopefully will include &ldquo;BigMemory&rdquo; from EHCACHE-Terracotta; more on that soon.</p>
+<p>In many ways, I am probably one of the most myopic presenters having spent so long talking about the JVM but the reality is this. The default install of ColdFusion is eons away from providing anything like a scalable core for CF applications and it gets worse with 64-bit installs.<br /><br />Most
+]]>
+<![CDATA[
+of the time that ColdFusion has depended on a JVM we have been in a 32-bit world, this meant we had a 2GB ceiling for the JVM heap and when we take intoconsideration the permanent generation which exists in addition to the JVM heap this meant 1.4GB maximum for the heap, which comprises of the young/new and old/tenured generations combined.<br /><br />Along came 64-bit which blasts us past the old 2GB limitation on 32-bit, caused by contiguous memory architecture. However, we are now seeing elongated pauses forJVM memory collection, also known as &ldquo;garbage collection&rdquo;. The larger the heaps, the longer seem the pauses, here is a quote from a recent technical blog on the issue &ldquo;a 20GB data set will take tens of seconds of stop-the-world time to compact&rdquo;. Obviously, a pause in excess of ten seconds is not acceptable in a web application.<br /><br />In the presentation, which will be largely practical, we will show some mitigation strategies for a 64-bit JVM which hopefully will include &ldquo;BigMemory&rdquo; from EHCACHE-Terracotta; more on that soon.</p>
 ]]>
 </session>
 </scheduled>
-<scheduled day="1" slot="2" time="02:30 PM" date="18/11/2011" room="???" sessionType="session">
+<scheduled day="1" slot="2" time="02:30 PM" date="18/11/2011" room="Chicago" sessionType="session">
 <speaker name="Mike Henke" twitter="mikehenke" email="henke.mike@gmail.com">
 <![CDATA[
-<p><span><span>Mike</span> Henke has worked with ColdFusion since 1999 for several companies in Omaha, NE and Washington, DC. He is an advocate for tools and practices to make developing ColdFusion more productive and easier with tools like Mylyn/Tasktop, ticket systems, and source control. Currently he is learning more about Git, Ruby on Rails, and ColdFusion on Wheels. He is an Adobe Community Professional and enjoys talking to people about ColdFusion. <span>Mike</span> occasionally blogs at </span><a href="http://henke.ws/" target="_blank"><span>http://henke.ws</span></a><span>.</span></p>
+<p><span><span>Mike</span> Henke has worked with ColdFusion since 1999 for several companies in Omaha, NE and Washington, DC. He is an advocate for tools and practices to make developing ColdFusion more productive and easier with tools like Mylyn/Tasktop, ticket systems, and source control. Currentl
+]]>
+<![CDATA[
+y he is learning more about Git, Ruby on Rails, and ColdFusion on Wheels. He is an Adobe Community Professional and enjoys talking to people about ColdFusion. <span>Mike</span> occasionally blogs at </span><a href="http://henke.ws/" target="_blank"><span>http://henke.ws</span></a><span>.</span></p>
 ]]>
 </speaker>
-<session title="Task-Oriented Workflow With Adobe Flash &amp; ColdFusion Builder" stream="CF">
+<session title="Task-Oriented Workflow With Adobe Flash &amp; ColdFusion Builder" stream="ColdFusion">
 <![CDATA[
 <p>A task-focused interface reduces information overload and makes multitasking easy. Making tasks a first class part of the editor allows monitoring your programming activity to create a &ldquo;task context&rdquo; that focuses your workspace and allows comprehsive traceability. This puts the information you need at your fingertips and improves productivity by reducing information overload, facilitating multitasking and easing the sharing of expertise.</p>
 ]]>
 </session>
 </scheduled>
-<scheduled day="1" slot="2" time="10:45 AM" date="17/11/2011" room="???" sessionType="session">
+<scheduled day="1" slot="2" time="10:45 AM" date="17/11/2011" room="Phantom" sessionType="session">
 <speaker name="Gavin 'Beau' Baumanis" twitter="" email="">
 <![CDATA[
-<p>Gavin is a Melbourne native and has been using ColdFusion since 2000, when he inherited a ColdFusion 4.0 application at RMIT University that displayed all the floor plans and space usage for the university's 5 campuses. In his spare time Gavin is the Patch Manager for the Apache Subversion project and lurker of several CFML related mailing lists when not riding his motorcycle &nbsp;- looking for long sweeping corners.</p>
+<p>Gavin is a Melbourne native and has been using ColdFusion since 2000, when he inherited a ColdFusion 4.0 application at RMIT University that displayed all the floor plans and space usage for the university's 5 campuses. In his spare time Gavin is the Patch Manager for the Apache Subversion projec
+]]>
+<![CDATA[
+t and lurker of several CFML related mailing lists when not riding his motorcycle &nbsp;- looking for long sweeping corners.</p>
 ]]>
 </speaker>
-<session title="Test Driven Development using MXUnit and Continuous Integration" stream="CF">
+<session title="Test Driven Development using MXUnit and Continuous Integration" stream="Other">
 <![CDATA[
 <p>TDD is awesome, right? During the presentation, Gavin will show you why you should be using it and how it has transformed the way he writes code. If writing simple, elegant code is your ultimate goal, then Gavin can show you how to get there by using the MX Unit testing framework to write your tests and the Jenkins, Continuous Integration package to automate and simplify your new Test Driven Development coding methodology.</p>
 ]]>
 </session>
 </scheduled>
-<scheduled day="1" slot="2" time="04:00 PM" date="18/11/2011" room="???" sessionType="session">
+<scheduled day="1" slot="2" time="04:00 PM" date="18/11/2011" room="42nd Street" sessionType="session">
 <speaker name="Bjorn Schultheiss" twitter="bschultheiss" email="">
 <![CDATA[
 <p>Bjorn works at Webfirm as Head of Creative where he is responsible for the UX of their Adslot Product.Webfirm software quality relies on their automated testing environments and Bjorn's experience in Flash has enabled them to ensure the quality of their Adbuilder product.His long history as a Flash programmer has seen many contributions to the flexcoders group and locally in Melbourne with presentations on Flex and frameworks.</p>
 ]]>
 </speaker>
-<session title="The Design of Flexible and Testable Code with FlexUnit" stream="CF">
+<session title="The Design of Flexible and Testable Code with FlexUnit" stream="Flex">
 <![CDATA[
 <p>This talk is focused on the design of flexible and testable code. </p>
  <p>We will look at Flex 4 using Flexunit without any other frameworks and explain what makes code difficult to test and how this can be corrected. </p>
@@ -484,52 +503,52 @@ stralia &amp;New Zealand&rsquo;s first online web presences, working on the lead
 ]]>
 </session>
 </scheduled>
-<scheduled day="1" slot="2" time="01:30 PM" date="18/11/2011" room="???" sessionType="session">
+<scheduled day="1" slot="2" time="03:00 PM" date="17/11/2011" room="42nd Street" sessionType="session">
 <speaker name="Terrence Ryan" twitter="tpryan" email="">
 <![CDATA[
 <p>Terrence is a Platform Evangelist for Adobe in the US. Although he covers the entire gamut of Adobe developer technologies, Terry has a thing for ColdFusion and AIR. </p>
  <p>Terrence has two main foci: ColdFusion and Higher Education. Basically he talks about ColdFusion to everyone and anyone, and talks about the Flash Platform to Higher Education.</p>
 ]]>
 </speaker>
-<session title="To be announced" stream="CF">
-<![CDATA[ ]]>
-</session>
-</scheduled>
-<scheduled day="1" slot="2" time="03:00 PM" date="17/11/2011" room="???" sessionType="session">
-<speaker name="Terrence Ryan" twitter="tpryan" email="">
-<![CDATA[
-<p>Terrence is a Platform Evangelist for Adobe in the US. Although he covers the entire gamut of Adobe developer technologies, Terry has a thing for ColdFusion and AIR. </p>
- <p>Terrence has two main foci: ColdFusion and Higher Education. Basically he talks about ColdFusion to everyone and anyone, and talks about the Flash Platform to Higher Education.</p>
-]]>
-</speaker>
-<session title="To be announced" stream="CF">
+<session title="To be announced" stream="Flex">
 <![CDATA[ <p>Synopsis forthcoming.</p> ]]>
 </session>
 </scheduled>
-<scheduled day="1" slot="2" time="09:00 AM" date="18/11/2011" room="???" sessionType="session">
+<scheduled day="1" slot="2" time="09:00 AM" date="18/11/2011" room="Chicago" sessionType="session">
 <speaker name="Terrence Ryan" twitter="tpryan" email="">
 <![CDATA[
 <p>Terrence is a Platform Evangelist for Adobe in the US. Although he covers the entire gamut of Adobe developer technologies, Terry has a thing for ColdFusion and AIR. </p>
  <p>Terrence has two main foci: ColdFusion and Higher Education. Basically he talks about ColdFusion to everyone and anyone, and talks about the Flash Platform to Higher Education.</p>
 ]]>
 </speaker>
-<session title="To be announced" stream="CF">
+<session title="To be announced" stream="ColdFusion">
 <![CDATA[ ]]>
 </session>
 </scheduled>
-<scheduled day="1" slot="2" time="04:00 PM" date="18/11/2011" room="???" sessionType="session">
+<scheduled day="1" slot="2" time="01:30 PM" date="18/11/2011" room="Chicago" sessionType="session">
+<speaker name="Terrence Ryan" twitter="tpryan" email="">
+<![CDATA[
+<p>Terrence is a Platform Evangelist for Adobe in the US. Although he covers the entire gamut of Adobe developer technologies, Terry has a thing for ColdFusion and AIR. </p>
+ <p>Terrence has two main foci: ColdFusion and Higher Education. Basically he talks about ColdFusion to everyone and anyone, and talks about the Flash Platform to Higher Education.</p>
+]]>
+</speaker>
+<session title="To be announced" stream="ColdFusion">
+<![CDATA[ ]]>
+</session>
+</scheduled>
+<scheduled day="1" slot="2" time="04:00 PM" date="18/11/2011" room="Chicago" sessionType="session">
 <speaker name="Darren Tracey" twitter="Demiurge_au" email="dtracey@gmail.com">
 <![CDATA[
 <p>Professional Software Developer for 23 years, web developer for 15 years, ColdFusion developer since version 3.<br /><br />Darren has been a driving force in the Allaire/Macromedia/Adobe User Group space in Brisbane for over 12 years, setting up and at times being the manager of the Queensland ColdFusion User Group.<br /><br />Darren has been on large Spectra projects, and several other technologies, but keeps coming back to his ColdFusion roots, and has now been on several winning Code Wars teams whipping up lightning CF solutions with the might of Notepad.<br /><br />In his seventh year at Suncorp, he is now a System Engineer, responsible for Suncorp's large and growing corporate ColdFusion platform, and for many of the applications hosted on it. With Suncorp embracing Agile development methodologies, he has now a wealth of Agile knowledge with stories of triumphs and tragedy to share with you.<br /><br />When Darren isn't at a computer, you might find him on a weight bench at the gym, or road cycling around Brisbane, kicking heads with Taekwon-Do, or flying his quadcopter with his iPhone.</p>
 ]]>
 </speaker>
-<session title="Turning a Legacy Batch-Job Monster into a Well-Behaved, Reliable, Lightweight Process" stream="CF">
+<session title="Turning a Legacy Batch-Job Monster into a Well-Behaved, Reliable, Lightweight Process" stream="ColdFusion">
 <![CDATA[
 <p>A case study going over the process that converted a hideously old and unreliable ColdFusion batch process that took hours to run, failed often and was a nightmare to re-run, into a much smaller, robust, fault tolerant process that is now super reliable, places very little load on the server and gives us real time progress and health information.</p>
 ]]>
 </session>
 </scheduled>
-<scheduled day="1" slot="2" time="03:00 PM" date="17/11/2011" room="???" sessionType="session">
+<scheduled day="1" slot="2" time="03:00 PM" date="17/11/2011" room="Chicago" sessionType="session">
 <speaker name="Indy Nagpal" twitter="" email="indy@strakersoftware.com ">
 <![CDATA[
 <p>Indy Nagpal has been working in the area of web application development for over a decade and has played many different roles during that time -- application development to project management to consulting. He has worked and trained across different countries and cultures and enjoys the challenges posed by working in different environments.</p>
@@ -538,39 +557,59 @@ stralia &amp;New Zealand&rsquo;s first online web presences, working on the lead
  <p>Indy blogs occasionally at&nbsp;<a href="http://nagpals.com/" target="_blank">http://nagpals.com</a>.</p>
 ]]>
 </speaker>
-<session title="Using No-SQL MongoDB with ColdFusion" stream="CF">
+<session title="Using No-SQL MongoDB with ColdFusion" stream="ColdFusion">
 <![CDATA[
 <p>Use of No-SQL databases in web applications is becoming increasingly common. In part this is because they work well with rapid application development due to their schema-less nature. And partly because they scale well in a cloud-based environment without too much effort.</p>
- <p>MongoDB is one of the many No-SQL database technologies available today. It's schema-less nature works very well with rapid application development nature of ColdFusion. Unlike other No-SQL databases, it offers the ability run arbitrary queries against databases without having to first write map-reduce functions. It also has some other interesting features like capped collections with asynchronous write ability.</p>
+ <p>MongoDB is one o
+]]>
+<![CDATA[
+f the many No-SQL database technologies available today. It's schema-less nature works very well with rapid application development nature of ColdFusion. Unlike other No-SQL databases, it offers the ability run arbitrary queries against databases without having to first write map-reduce functions. It also has some other interesting features like capped collections with asynchronous write ability.</p>
  <p>In this session, Indy takes you through some common use-cases for considering MongoDB with ColdFusion applications, contrasting it with other No-SQL databases like CouchDB. And he shares his experiences of using it with cloud-based ColdFusion applications. The aim of the session is to provide an overview of using MongoDB with ColdFusion so that you have another tool to consider when working on your next web application.</p>
 ]]>
 </session>
 </scheduled>
-<scheduled day="1" slot="2" time="10:45 AM" date="17/11/2011" room="???" sessionType="session">
+<scheduled day="1" slot="2" time="10:45 AM" date="17/11/2011" room="Chicago" sessionType="session">
 <speaker name="Jaime Metcher" twitter="" email="jmetcher@gmail.com">
 <![CDATA[
-<p>Jaime is a software architect at the University of Queensland,specialising in systems support for continuing professional development. Since graduating with a degree in mathematics from (coincidentally) the very same university, he's been engaged in a search for meaning in the unlikeliest places, such as software manuals, code, and even software architecture. He has 15 years experience in commercial software development, working mostly in Cold Fusion for the last 10.</p>
- <p>When not working on finding the perfect variable name, Jaime likes relaxing with home extension, furniture making, windsurfing, and just generally appreciating the heck out of his wife, kids and dogs.</p>
+<p>
+ Jaime Metcher is a technology strategist at the University of Queensland. He's spent 12 years innovating in the eLearning space, using ColdFusion versions 4 through to 9. In previous lives he's been just another perl hacker, and was working on 3D graphics software in the days when EGA was new
+]]>
+<![CDATA[
+and assembly code was a vital job skill.
+ </p>
+ <p>
+ Technology interests are centred around design patterns and domain modelling, in particular the translation (and what's lost in translation) between non-technical design patterns and concrete software models.</p>
 ]]>
 </speaker>
-<session title="Why bother with OOP" stream="CF">
-<![CDATA[ ]]>
-</session>
-</scheduled>
-<scheduled day="1" slot="2" time="03:00 PM" date="17/11/2011" room="???" sessionType="session">
-<speaker name="Robin Hilliard" twitter="robinhilliard" email="robin@rocketboots.com.au">
+<session title="Why bother with OOP" stream="ColdFusion">
 <![CDATA[
-<p>Robin Hilliard is founder and CTO of RocketBoots, an innovative technology company providing advisory, application development and hard science services to some of Australia's leading organisations. From mobile apps and robots to RIAs, publishing workflow and computer vision applications, RocketB
+<p>
+ Why bother with Object-Oriented Programming
+ Unlike many of our peers working with other languages, ColdFusion programmers can feasibly choose to simply ignore OOP. If you've made that choice, do you feel guilty about it, or at least somewhat defensive? Do you feel that you're being asked to
 ]]>
 <![CDATA[
-oots is here to prove that great software can change the world.<br />
+take on faith that OOP will somehow be "better"? Does OOP in ColdFusion actually seem harder than procedural coding? 
+ </p>
+ <p>
+ This talk is not an introduction to ColdFusion's OO language constructs - there are many excellent tutorials already out there. Instead, I start from the premise that coding at all levels is a design activity, and therefore OOP can most usefully be described in terms of the design problems it helps to address. Once you know the Why, the How gets a lot easier - and in fact we may cover a bit of the How by way of example.
+ </p>
+ <p>
+ I'll go on to argue that there are some features of the ColdFusion ecosystem (and in that I include its human inhabitants) that make learning and transitioning to OOP uniquely challenging. Pretty much from day one we're confronted with those "am I stupid, or is this hard?" moments. I'll try to point out the hard bits, so you can focus on minimizing the stupid :)
+ </p>
+]]>
+</session>
+</scheduled>
+<scheduled day="1" slot="2" time="03:00 PM" date="17/11/2011" room="Phantom" sessionType="session">
+<speaker name="Robin Hilliard" twitter="robinhilliard" email="robin@rocketboots.com.au">
+<![CDATA[
+<p>Robin Hilliard is founder and CTO of RocketBoots, an innovative technology company providing advisory, application development and hard science services to some of Australia's leading organisations. From mobile apps and robots to RIAs, publishing workflow and computer vision applications, RocketBoots is here to prove that great software can change the world.<br />
  <br />
  Formerly with Allaire and Macromedia, Robin is an experienced software architect and Adobe Ambassador with a BSc in Computer Science and Pure Mathematics from Sydney University. He is a passionate advocate for common sense approaches to solving real world problems with technology, from initial engagement to requirements, agile methodologies and all kinds of testing.&nbsp;<br />
  <br />
  Robin is the creator of several ColdFusion open source projects, a regular conference speaker and moonlights as the compare of CodeWar. He is based in Sydney, Australia.</p>
 ]]>
 </speaker>
-<session title="Writing Domain Specific Languages using Custom Tags" stream="CF">
+<session title="Writing Domain Specific Languages using Custom Tags" stream="Other">
 <![CDATA[
 <p>ColdFusion's raison d'&ecirc;tre has always been to provide abstractions for common jobs from the domain of Internet application development - prefix a popular protocol, web form control or task with an angle bracket and a cf and more often than not there's a tag for the task.
  <br />
