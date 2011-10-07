@@ -78,7 +78,7 @@
 			<s:Label width="100%" text="Thanks to Dennis Clark, Kai Koening, Denis Johnson and the Motorola Owners' Forum for helpful feedback on this application." />
 			<s:Rect height="10" />
 			<s:Label width="100%" text="Entire source code for this application for all platforms can be found on GitHub." />
-			<s:Label text="cf.Objective(ANZ) github" click="gotoURL('http://github.com/justinmclean/cf.Objective-ANZ--mobile-schedule')" />
+			<s:Label text="cf.Objective(ANZ) github" click="gotoURL('https://github.com/justinmclean/cfObjective-ANZ--Mobile-Schedule')" />
 			<s:Rect height="10" />			
 			<s:Label width="100%" text="This application uses the Eskimo mobile library." />
 			<s:Label width="100%" text="http://e-skimo.com/" click="gotoURL('http://e-skimo.com/')" />
