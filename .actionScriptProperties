@@ -56,14 +56,13 @@
   <flashCatalyst validateFlashCatalystCompatibility="false"/>
   <buildTargets>
     <buildTarget buildTargetName="com.adobe.flexide.multiplatform.ios.platform" iosSettingsVersion="1" provisioningFile="/Users/justinmclean/Documents/Adobe Flash Builder 4.5/Apple/cfobjectiveANZ_development.mobileprovision" releasePackageType="ipa-app-store">
+      <multiPlatformSettings enabled="true" includePlatformLibs="false" platformID="com.adobe.flexide.multiplatform.ios.platform" version="2"/>
       <airSettings airCertificatePath="/Users/justinmclean/Documents/Adobe Flash Builder 4.5/Apple/cfObjetcive ANZ Developer Certificate.p12" airTimestamp="true" version="1">
         <airExcludes>
           <pathEntry path=".DS_Store"/>
           <pathEntry path="data/sessions.xml.new"/>
-          <pathEntry path="blackberry-tablet.xml"/>
         </airExcludes>
       </airSettings>
-      <multiPlatformSettings enabled="true" includePlatformLibs="false" platformID="com.adobe.flexide.multiplatform.ios.platform" version="2"/>
       <actionScriptSettings version="1"/>
     </buildTarget>
     <buildTarget buildTargetName="com.qnx.flexide.multiplatform.qnx.platform" signBarFile="false">
@@ -74,13 +73,13 @@
       <actionScriptSettings version="1"/>
     </buildTarget>
     <buildTarget airDownloadURL="https://market.android.com/details?id=com.adobe.air" androidSettingsVersion="1" buildTargetName="com.adobe.flexide.multiplatform.android.platform">
-      <multiPlatformSettings enabled="true" includePlatformLibs="false" platformID="com.adobe.flexide.multiplatform.android.platform" version="2"/>
       <airSettings airCertificatePath="/Users/justinmclean/Desktop/cf.objective/androidCertificate.p12" airTimestamp="true" version="1">
         <airExcludes>
-          <pathEntry path=".DS_Store"/>
           <pathEntry path="data"/>
+          <pathEntry path=".DS_Store"/>
         </airExcludes>
       </airSettings>
+      <multiPlatformSettings enabled="true" includePlatformLibs="false" platformID="com.adobe.flexide.multiplatform.android.platform" version="2"/>
       <actionScriptSettings version="1"/>
     </buildTarget>
     <buildTarget buildTargetName="default">
