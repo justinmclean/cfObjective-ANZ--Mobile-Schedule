@@ -27,7 +27,14 @@ package au.com.cfobjective.model
 		}
 		
 		public function get details():String {
-			return session.title + "\n" + session.speaker.name;
+			var details:String = "";
+			details = session.title;
+			
+			for each (var speaker:Speaker in session.speakers) {
+				details += "\n" + speaker.name;
+			}
+			
+			return details;
 		}
 		
 		public function get listIcon():Class {
