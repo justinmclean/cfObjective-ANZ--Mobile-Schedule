@@ -1,12 +1,13 @@
 package au.com.cfobjective.model
 {
+	import mx.collections.ArrayCollection;
 	import mx.core.FlexGlobals;
 
 	[Bindable] 
 	public class Session
 	{
 		public var title:String;
-		public var speaker:Speaker;
+		public var speakers:ArrayCollection;
 		public var description:String;
 		public var stream:String;
 		
@@ -24,9 +25,9 @@ package au.com.cfobjective.model
 		[Embed(source="assets/icons/OT64x64.png")]
 		public static var OTIcon:Class;
 		
-		public function Session(title:String, speaker:Speaker, description:String, stream:String) {
+		public function Session(title:String, speakers:ArrayCollection, description:String, stream:String) {
 			this.title = title;
-			this.speaker = speaker;
+			this.speakers = speakers;
 			this.description = description;
 			this.stream = stream;
 		}
