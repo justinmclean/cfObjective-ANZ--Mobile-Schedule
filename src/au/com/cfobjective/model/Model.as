@@ -17,41 +17,49 @@ package au.com.cfobjective.model
 			var newSessions:Array = [];
 			var newSchedule:Array = [];
 			
-			for each (var item:Object in xmlSessions.scheduled) {
+			for each (var scheduleXML:Object in xmlSessions.scheduled) {
 				var session:Session;
 				var scheduled:Scheduled = new Scheduled();
+				var talkSpeakers:ArrayCollection = new ArrayCollection();
 
-				var found:Boolean = false;
-				for each (var speaker:Speaker in newSpeakers) {
-					if (speaker.name == item.speaker.@name) {
-						found = true;
-						break;
+				for each (var speakerXML:Object in scheduleXML.speaker) {
+					var found:Boolean = false;
+					for each (var speaker:Speaker in newSpeakers) {
+						if (speaker.name == speakerXML.@name) {
+							found = true;
+							break;
+						}
 					}
-				}
 				
-				if (!found) {
-					speaker = new Speaker(item.speaker.@name, item.speaker.@twitter, item.speaker.@email, HTML.stripTags(item.speaker.toString()), new ArrayCollection());
-				}
-				
-				session = new Session(item.session.@title, speaker, HTML.stripTags(item.session.toString()), item.session.@stream);
-				
-				if (item.@date == "17/11/2011") {
-					scheduled.day = "Thurs";
-				}
-				else if (item.@date == "18/11/2011") {
-					scheduled.day = "Fri";
-				}
-				
-				scheduled.time = item.@time;
-				scheduled.session = session;
-				scheduled.room = item.@room;
-				
-				speaker.schedule.addItem(scheduled);
-				
-				if (item.@sessionType == "session") {
 					if (!found) {
-						newSpeakers.push(speaker);
+						speaker = new Speaker(speakerXML.@name, speakerXML.@twitter, speakerXML.@email, HTML.stripTags(speakerXML.toString()), new ArrayCollection());
+						
+						if (scheduleXML.@sessionType == "session") {
+							newSpeakers.push(speaker);
+						}
 					}
+					
+					talkSpeakers.addItem(speaker);
+				}
+				
+				session = new Session(scheduleXML.session.@title, talkSpeakers, HTML.stripTags(scheduleXML.session.toString()), scheduleXML.session.@stream);
+				
+				if (scheduleXML.@date == Conference.DATES[0]) {
+					scheduled.day = Conference.DAYS[0];
+				}
+				else if (scheduleXML.@date == Conference.DATES[1]) {
+					scheduled.day = Conference.DAYS[1];
+				}
+				
+				scheduled.time = scheduleXML.@time;
+				scheduled.session = session;
+				scheduled.room = scheduleXML.@room;
+				
+				for each (speaker in talkSpeakers) {
+					speaker.schedule.addItem(scheduled);
+				}
+				
+				if (scheduleXML.@sessionType == "session") {
 					newSessions.push(session);
 				}
 				else {
