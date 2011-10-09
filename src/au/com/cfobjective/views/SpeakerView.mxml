@@ -46,5 +46,5 @@
 		<s:ViewMenuItem label="Twitter" click="showTwitter((data as Speaker).twitter)" enabled="{(data as Speaker).twitter != ''}" iconPlacement="left" icon="{twitter}" />
 	</s:viewMenuItems>
 	
-	<components:SpeakerDisplay schedule="{(data as Speaker).schedule}" sessionChange="showSession(event.session)" />
+	<components:SpeakerDisplay schedule="{(data as Speaker).schedule}" speaker="{(data as Speaker)}" sessionChange="showSession(event.session)" />
 </s:View>

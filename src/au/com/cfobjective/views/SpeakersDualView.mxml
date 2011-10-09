@@ -43,5 +43,5 @@
 	</s:viewMenuItems>
 
 	<components:SpeakersDisplay speakers="{data as ArrayCollection}" speakerChange="showSpeaker(event)" />
-	<components:SpeakerDisplay schedule="{speaker.schedule}" sessionChange="gotoSession(event.session)" />
+	<components:SpeakerDisplay schedule="{speaker.schedule}" speaker="{speaker}" sessionChange="gotoSession(event.session)" />
 </s:View>

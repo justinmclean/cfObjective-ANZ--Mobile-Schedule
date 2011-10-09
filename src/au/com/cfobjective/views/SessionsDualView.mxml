@@ -29,7 +29,7 @@
 				session = (data as ArrayCollection)[0];
 			}
 			
-			protected function gotoSpeaker(speaker:Speaker):void {
+			public function gotoSpeaker(speaker:Speaker):void {
 				navigator.pushView(SpeakerView, speaker);
 			}
 		]]>
@@ -42,12 +42,28 @@
 	
 	<s:actionContent>
 		<s:Button icon="{info}" click="gotoAbout()" />
-		<s:Button icon="{speaker}" click="gotoSpeaker(session.speaker)" enabled="{session != null}" />
-	</s:actionContent>
+		<s:DataGroup dataProvider="{(data as Session).speakers}" width="100%">
+			<s:layout>
+				<s:VerticalLayout />
+			</s:layout>
+			
+			<s:itemRenderer>
+				<fx:Component>
+					<s:ItemRenderer autoDrawBackground="false" width="100%">
+						<fx:Script>
+							<![CDATA[
+								import au.com.cfobjective.model.Speaker;
+							]]>
+						</fx:Script>
+						<s:Button icon="{outerDocument.speaker}" click="outerDocument.gotoSpeaker(data as Speaker)" />
+					</s:ItemRenderer>
+				</fx:Component>
+			</s:itemRenderer>
+		</s:DataGroup>	</s:actionContent>
 	
 	<s:viewMenuItems>
 		<s:ViewMenuItem label="About" click="gotoAbout()" iconPlacement="left" icon="{info}" />
-		<s:ViewMenuItem label="Speaker" click="gotoSpeaker(session.speaker)"  enabled="{session != null}" iconPlacement="left" icon="{speaker}" />
+		<s:ViewMenuItem label="Speaker" click="gotoSpeaker(session.speakers[0])"  enabled="{session != null}" iconPlacement="left" icon="{speaker}" />
 	</s:viewMenuItems>
 
 	<components:SessionsDisplay sessions="{data as ArrayCollection}" sessionChange="sessionChange(event)" />

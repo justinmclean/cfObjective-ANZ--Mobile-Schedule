@@ -14,7 +14,7 @@
 			
 			[Bindable] public var session:Session;
 			
-			protected function gotoSpeaker(speaker:Speaker):void {
+			public function gotoSpeaker(speaker:Speaker):void {
 				var event:SpeakerEvent = new SpeakerEvent(SpeakerEvent.CHANGE, speaker);
 				
 				dispatchEvent(event);
@@ -27,15 +27,37 @@
 		<s:Image source="{session.viewIcon}" width="64" height="64" />
 		<s:VGroup width="100%" gap="3">
 			<s:Label width="100%" text="{session.title}" styleName="title"/>
-			<s:Label width="100%" text="{session.speaker.name}" styleName="subtitle" click="gotoSpeaker(session.speaker)"/>				
+			
+			<s:DataGroup dataProvider="{session.speakers}" width="100%">
+				<s:layout>
+					<s:VerticalLayout />
+				</s:layout>
+				
+				<s:itemRenderer>
+					<fx:Component>
+						<s:ItemRenderer autoDrawBackground="false" click="outerDocument.gotoSpeaker(data as Speaker)" width="100%">
+							<s:layout>
+								<s:VerticalLayout gap="5" />
+							</s:layout>
+							<fx:Script>
+								<![CDATA[
+									import au.com.cfobjective.model.Speaker;
+								]]>
+							</fx:Script>
+							<s:Rect height="5" />
+							<s:Label text="{data.name}" width="100%" styleName="subTitle" />
+						</s:ItemRenderer>
+					</fx:Component>
+				</s:itemRenderer>
+			</s:DataGroup>
 		</s:VGroup>
 	</s:HGroup>
 	
 	<s:Rect height="10" />
 	
 	<s:Scroller width="100%" height="100%">
-		<s:HGroup>
+		<s:VGroup paddingRight="10">
 			<s:Label width="100%" text="{session.description}" />
-		</s:HGroup>
+		</s:VGroup>
 	</s:Scroller>
 </s:VGroup>

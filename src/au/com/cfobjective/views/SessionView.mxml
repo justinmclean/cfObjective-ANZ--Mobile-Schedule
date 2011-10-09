@@ -8,7 +8,7 @@
 			import au.com.cfobjective.model.Session;
 			import au.com.cfobjective.model.Speaker;		
 			
-			protected function showSpeaker(speaker:Speaker):void {
+			public function showSpeaker(speaker:Speaker):void {
 				navigator.pushView(SpeakerView, speaker);
 			}	
 		]]>
@@ -23,11 +23,28 @@
 	</s:navigationContent>
 	
 	<s:actionContent>
-		<s:Button icon="{speaker}" click="showSpeaker((data as Session).speaker)" />
+		<s:DataGroup dataProvider="{(data as Session).speakers}" width="100%">
+			<s:layout>
+				<s:VerticalLayout />
+			</s:layout>
+			
+			<s:itemRenderer>
+				<fx:Component>
+					<s:ItemRenderer autoDrawBackground="false" width="100%">
+						<fx:Script>
+							<![CDATA[
+								import au.com.cfobjective.model.Speaker;
+							]]>
+						</fx:Script>
+						<s:Button icon="{outerDocument.speaker}" click="outerDocument.showSpeaker(data as Speaker)" />
+					</s:ItemRenderer>
+				</fx:Component>
+			</s:itemRenderer>
+		</s:DataGroup>
 	</s:actionContent>
 	
 	<s:viewMenuItems>
-		<s:ViewMenuItem label="Speaker" click="showSpeaker((data as Session).speaker)"  iconPlacement="left" icon="{speaker}" />
+		<s:ViewMenuItem label="Speaker" click="showSpeaker((data as Session).speakers[0] as Speaker)"  iconPlacement="left" icon="{speaker}" />
 	</s:viewMenuItems>
 	
 	<components:SessionDisplay session="{data as Session}" speakerChange="showSpeaker(event.speaker)" />
