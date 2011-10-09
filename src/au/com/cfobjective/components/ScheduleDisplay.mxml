@@ -3,6 +3,7 @@
 		 width="100%" height="100%" initialize="setup()">
 	
 	<s:states>
+		<!-- Needs to match Conferance.DAYS -->
 		<s:State name="Thursday" />
 		<s:State name="Friday" />
 	</s:states>
@@ -13,12 +14,13 @@
 	
 	<fx:Declarations>
 		<s:MultiDPIBitmapSource id="left" source160dpi="@Embed('assets/icons/arrowleft24x24.png')" source240dpi="@Embed('assets/icons/arrowleft48x48.png')" source320dpi="@Embed('assets/icons/arrowleft64x64.png')" />
-		<s:MultiDPIBitmapSource id="right" source160dpi="@Embed('assets/icons/arrowright24x24.png')" source240dpi="@Embed('assets/icons/arrowright48x48.png')" source320dpi="@Embed('assets/icons/arrowleft64x64.png')" />
+		<s:MultiDPIBitmapSource id="right" source160dpi="@Embed('assets/icons/arrowright24x24.png')" source240dpi="@Embed('assets/icons/arrowright48x48.png')" source320dpi="@Embed('assets/icons/arrowright64x64.png')" />
 	</fx:Declarations>
 	
 	<fx:Script>
 		<![CDATA[
 			import au.com.cfobjective.events.SessionEvent;
+			import au.com.cfobjective.model.Conference;
 			import au.com.cfobjective.model.Scheduled;
 			import au.com.cfobjective.model.Session;
 			
@@ -30,8 +32,8 @@
 			protected function setup():void {			
 				var date:Date = new Date();
 				
-				if (date.day == 5) {
-					currentState = "Friday";
+				if (date == Conference.DAYNOS[1]) {
+					currentState = Conference.DAYS[1];
 				}
 				
 				filterDay();
